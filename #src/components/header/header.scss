@@ -1,0 +1,73 @@
+.header {
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+  }
+
+  &__address {
+    span {
+      display: block;
+    }
+  }
+
+  &__contacts {
+
+  }
+}
+
+.address {
+  font-style: normal;
+
+  span {
+    position: relative;
+    padding: 0 0 0 17px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 7px;
+      height: 12px;
+      opacity: 0.5;
+      background: url('../images/icons/map-marker.svg') center no-repeat;
+    }
+    
+  }
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    margin: 0 55px 0 0;
+    a {
+      display: block;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.cart {
+  cursor: pointer;
+  
+  &__img {
+    margin: 0 0 10px;
+
+    path {
+      transition: all 0.3s ease 0s;
+    }
+    
+    &:hover {
+      path {
+        fill: var(--accent);
+      }
+
+    }
+  }
+}
