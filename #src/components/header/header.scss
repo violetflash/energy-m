@@ -270,31 +270,6 @@
 .menu {
   display: flex;
 
-  &__megamenu {
-    padding: 20px;
-    min-width: 184px;
-    background: linear-gradient(135deg, #E62817 0%, #F26118 100%);
-    font-weight: 700;
-    color: $white;
-    text-align: center;
-
-    span {
-      position: relative;
-      padding: 0 20px 0 0;
-
-      &::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 10px;
-        height: 10px;
-        background: url('../images/icons/chevron-down.svg') center no-repeat;
-      }
-    }
-  }
-
   &__list {
     display: flex;
     flex: 1 1 auto;
@@ -337,5 +312,35 @@
 
   &__link {
     display: inline-block;
+  }
+}
+
+.mega-menu {
+
+  &__btn {
+    padding: 22px;
+    min-width: 184px;
+    background: linear-gradient(135deg, #E62817 0%, #F26118 100%);
+    font-weight: 700;
+    color: $white;
+    text-align: center;
+
+    span {
+      position: relative;
+      padding: 0 20px 0 0;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        background: url('../images/icons/chevron-down.svg') center no-repeat;
+      }
+    }
+
+
   }
 }
