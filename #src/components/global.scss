@@ -21,10 +21,15 @@
   }
 }
 
+// TABS
 ._tabs-content {
   display: none;
 
   &._active {
     display: block;
   }
+}
+
+._tabs-item {
+  cursor: pointer;
 }

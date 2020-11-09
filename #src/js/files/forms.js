@@ -19,34 +19,6 @@ for (let i = 0; i < tabs.length; i++) {
     }
 }
 
-//FILTER-TABS
-let tabsFilter = document.querySelectorAll('.filter');
-for (let i = 0; i < tabsFilter.length; i++) {
-    let tabFilter = tabsFilter[i];
-    let tabs_items = tabFilter.querySelectorAll('.filter__tab');
-    let tabs_content = tabFilter.querySelectorAll('.filter__tab-content');
-    let auto = document.querySelector('._auto');
-    let tabSlider = document.querySelector('.filter__tab-slider');
-    for (let i = 0; i < tabs_items.length; i++) {
-        let tabs_item = tabs_items[i];
-        tabs_item.addEventListener('click', function (e) {
-            for (let i = 0; i < tabs_items.length; i++) {
-                let tabs_item = tabs_items[i];
-                tabs_item.classList.remove('_active');
-                tabs_content[i].classList.remove('_active');
-            }
-            tabs_item.classList.add('_active');
-            tabs_content[i].classList.add('_active');
-            e.preventDefault();
-            if (auto.classList.contains('_active')) {
-                tabSlider.classList.remove('_active')
-            } else {
-                tabSlider.classList.add('_active')
-            }
-        });
-    }
-}
-
 
 //Also working tabs code
 // let tabs = document.querySelectorAll('._tabs')

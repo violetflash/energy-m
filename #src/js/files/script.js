@@ -15,3 +15,5 @@ for (let anchor of anchors) {
         })
     })
 }
+
+@@include('../../components/header/header.js', {})
