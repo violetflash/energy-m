@@ -1,18 +1,20 @@
 <header class="header">
   <div class="container">
-    <div class="header__top">
-      <a class="header__logo logo" href="">
+    <div class="header__top top-header">
+      <a class="top-header__logo logo" href="">
         <img class="logo__image" src="images/icons/logo.svg" alt="Энергия-М">
       </a>
-      <address class="header__address address"><span>Петропавловск-Камчатский</span>
+      <address class="top-header__address address"><span>Петропавловск-Камчатский</span>
         c 4:00 до 13:00 МСК
       </address>
-      <input class="header__search site-search" placeholder="Поиск по сайту">
-      <div class="header__contacts contacts">
+      <label class="top-header__search search-input" data-da="header__search,0,650">
+        <input class="search-input__input" placeholder="Поиск по сайту">
+      </label>
+      <div class="top-header__contacts contacts">
         <div class="contacts__item">
           <a class="contacts__phone" href="tel:83852332211">8 (3852) 33-22-11</a>
-          <a class="contacts__text" href="mailto:zakaz@kotel-kvr.su">zakaz@kotel-kvr.su</a>
-          <a class="contacts__modal">zakaz@kotel-kvr.su</a>
+          <p class="contacts__text">zakaz@kotel-kvr.su</p>
+          <a class="contacts__modal">Написать на email</a>
         </div>
         <div class="contacts__item">
           <a class="contacts__phone" href="tel:88007001579">8-800-700-15-79</a>
@@ -20,21 +22,48 @@
           <a class="contacts__modal" href="">Обратный звонок</a>
         </div>
       </div>
-      <div class="header__cart cart">
-        <svg class="cart__img" width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0)">
-            <path d="M8.57522 16.1662H8.57638C8.57734 16.1662 8.57831 16.166 8.57927 16.166H21.9912C22.3214 16.166 22.6117 15.9492 22.7024 15.6348L25.6614 5.38091C25.7252 5.15985 25.6805 4.9222 25.5408 4.73871C25.401 4.55522 25.1823 4.44727 24.9502 4.44727H6.86918L6.34038 2.09112C6.26506 1.756 5.96492 1.51758 5.61816 1.51758H1.17969C0.771093 1.51758 0.439941 1.84545 0.439941 2.25C0.439941 2.65455 0.771093 2.98242 1.17969 2.98242H5.02483C5.11845 3.39994 7.55537 14.2577 7.69562 14.8824C6.90945 15.2207 6.35791 15.9968 6.35791 16.8984C6.35791 18.11 7.35349 19.0957 8.57715 19.0957H21.9912C22.3998 19.0957 22.731 18.7678 22.731 18.3633C22.731 17.9587 22.3998 17.6309 21.9912 17.6309H8.57715C8.16933 17.6309 7.8374 17.3022 7.8374 16.8984C7.8374 16.4952 8.16817 16.1672 8.57522 16.1662ZM23.9695 5.91211L21.4331 14.7012H9.17049L7.19783 5.91211H23.9695Z" fill="#252525"/>
-            <path d="M7.8374 21.2891C7.8374 22.5006 8.83298 23.4863 10.0566 23.4863C11.2803 23.4863 12.2759 22.5006 12.2759 21.2891C12.2759 20.0775 11.2803 19.0918 10.0566 19.0918C8.83298 19.0918 7.8374 20.0775 7.8374 21.2891ZM10.0566 20.5566C10.4645 20.5566 10.7964 20.8853 10.7964 21.2891C10.7964 21.6928 10.4645 22.0215 10.0566 22.0215C9.64882 22.0215 9.31689 21.6928 9.31689 21.2891C9.31689 20.8853 9.64882 20.5566 10.0566 20.5566Z" fill="#252525"/>
-            <path d="M18.2925 21.2891C18.2925 22.5006 19.2881 23.4863 20.5117 23.4863C21.7354 23.4863 22.731 22.5006 22.731 21.2891C22.731 20.0775 21.7354 19.0918 20.5117 19.0918C19.2881 19.0918 18.2925 20.0775 18.2925 21.2891ZM20.5117 20.5566C20.9195 20.5566 21.2515 20.8853 21.2515 21.2891C21.2515 21.6928 20.9195 22.0215 20.5117 22.0215C20.1039 22.0215 19.772 21.6928 19.772 21.2891C19.772 20.8853 20.1039 20.5566 20.5117 20.5566Z" fill="#252525"/>
-          </g>
-          <defs>
-            <clipPath id="clip0">
-              <rect width="25.25" height="25" fill="white" transform="translate(0.439941)"/>
-            </clipPath>
-          </defs>
-        </svg>
-        <div class="cart__total rub">35 000</div>
+      <div class="top-header__cart" data-da="header__bottom,0,650" >
+        <a class="cart" href="">
+          <svg class="cart__img" width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0)">
+              <path
+                  d="M8.57522 16.1662H8.57638C8.57734 16.1662 8.57831 16.166 8.57927 16.166H21.9912C22.3214 16.166 22.6117 15.9492 22.7024 15.6348L25.6614 5.38091C25.7252 5.15985 25.6805 4.9222 25.5408 4.73871C25.401 4.55522 25.1823 4.44727 24.9502 4.44727H6.86918L6.34038 2.09112C6.26506 1.756 5.96492 1.51758 5.61816 1.51758H1.17969C0.771093 1.51758 0.439941 1.84545 0.439941 2.25C0.439941 2.65455 0.771093 2.98242 1.17969 2.98242H5.02483C5.11845 3.39994 7.55537 14.2577 7.69562 14.8824C6.90945 15.2207 6.35791 15.9968 6.35791 16.8984C6.35791 18.11 7.35349 19.0957 8.57715 19.0957H21.9912C22.3998 19.0957 22.731 18.7678 22.731 18.3633C22.731 17.9587 22.3998 17.6309 21.9912 17.6309H8.57715C8.16933 17.6309 7.8374 17.3022 7.8374 16.8984C7.8374 16.4952 8.16817 16.1672 8.57522 16.1662ZM23.9695 5.91211L21.4331 14.7012H9.17049L7.19783 5.91211H23.9695Z"
+                  fill="#252525"/>
+              <path
+                  d="M7.8374 21.2891C7.8374 22.5006 8.83298 23.4863 10.0566 23.4863C11.2803 23.4863 12.2759 22.5006 12.2759 21.2891C12.2759 20.0775 11.2803 19.0918 10.0566 19.0918C8.83298 19.0918 7.8374 20.0775 7.8374 21.2891ZM10.0566 20.5566C10.4645 20.5566 10.7964 20.8853 10.7964 21.2891C10.7964 21.6928 10.4645 22.0215 10.0566 22.0215C9.64882 22.0215 9.31689 21.6928 9.31689 21.2891C9.31689 20.8853 9.64882 20.5566 10.0566 20.5566Z"
+                  fill="#252525"/>
+              <path
+                  d="M18.2925 21.2891C18.2925 22.5006 19.2881 23.4863 20.5117 23.4863C21.7354 23.4863 22.731 22.5006 22.731 21.2891C22.731 20.0775 21.7354 19.0918 20.5117 19.0918C19.2881 19.0918 18.2925 20.0775 18.2925 21.2891ZM20.5117 20.5566C20.9195 20.5566 21.2515 20.8853 21.2515 21.2891C21.2515 21.6928 20.9195 22.0215 20.5117 22.0215C20.1039 22.0215 19.772 21.6928 19.772 21.2891C19.772 20.8853 20.1039 20.5566 20.5117 20.5566Z"
+                  fill="#252525"/>
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect width="25.25" height="25" fill="white" transform="translate(0.439941)"/>
+              </clipPath>
+            </defs>
+          </svg>
+          <span class="cart__total rub">1 350 000</span>
+        </a>
       </div>
     </div>
+    <div class="header__search"></div>
+    <div class="header__bottom">
+      <button class="header__burger" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <nav class="header__menu menu">
+      <button class="menu__megamenu" type="button"><span>Каталог</span></button>
+      <ul class="menu__list">
+        <li class="menu__item"><a class="menu__link" href="">Цены на продукцию</a></li>
+        <li class="menu__item"><a class="menu__link" href="">Опросные листы</a></li>
+        <li class="menu__item"><a class="menu__link" href="">Контакты</a></li>
+        <li class="menu__item"><a class="menu__link" href="">Виртуальный тур</a></li>
+        <li class="menu__item has-dropdown"><a class="menu__link" href="">О заводе</a></li>
+        <li class="menu__item"><a class="menu__link" href="">Подобрать котел</a></li>
+      </ul>
+    </nav>
   </div>
 </header>

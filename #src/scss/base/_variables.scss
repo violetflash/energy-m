@@ -1,12 +1,15 @@
 // цвета сайта
 :root {
   --mainColor: #252525;
+  --mainColor-light: rgba(#252525, 0.5);
   --accent: #f23d18;
   --grey: #f4f4f4;
 }
 
 // для спользования режима RGBA
 $mainColor: #252525;
+$mainColor-light: rgba(#252525, 0.5);
+$white: #fff;
 $grey: #f4f4f4;
 $accent: #f23d18;
 

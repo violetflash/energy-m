@@ -41,6 +41,10 @@ button {
   cursor: pointer;
 }
 
+input {
+  outline: transparent;
+}
+
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }

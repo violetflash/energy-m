@@ -414,7 +414,7 @@ function browserSync(params) {
             // index: "index.html"
         },
         port: 5000,
-        // notify: false,
+        notify: false,
         injectChanges: false
     })
 
