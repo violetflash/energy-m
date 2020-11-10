@@ -13,7 +13,8 @@
     display: none;
     margin: 0 -20px;
     padding: 0 15px;
-    background-color: $grey;
+    background: linear-gradient(135deg, #E62817 0%, #F26118 100%);
+
 
     @media (max-width: 650px) {
       display: flex;
@@ -54,7 +55,7 @@
   }
   
   @media (max-width: 550px) {
-    margin: 0 0 15px;
+    margin: 0 -15px 15px;
   }
 
   &__logo {
@@ -62,10 +63,12 @@
 
     @media (max-width: 550px) {
       margin: 0 0 15px;
+      padding: 0 15px 15px 0;
       display: flex;
       flex-basis: 100%;
-      align-items: center;
-      justify-content: center;
+      justify-content: flex-end;
+
+      border-bottom: 2px solid $accent;
     }
   }
 
@@ -89,6 +92,11 @@
         opacity: 0.5;
         background: url('../images/icons/map-marker.svg') center no-repeat;
       }
+    }
+    
+    @media (max-width: 550px) {
+      margin: 0 15px 0 0;
+      padding: 0 0 0 15px;
     }
   }
 
@@ -128,6 +136,11 @@
     @media (max-width: 650px) {
       display: flex;
       align-items: center;
+      color: $white;
+
+      .cart path {
+        fill: $white;
+      }
     }
 
     &:hover {
@@ -142,14 +155,13 @@
   &__total {
     display: block;
     font-weight: 600;
+    @media (max-width: 650px) {
+      margin: 0 0 0 10px;
+    }
   }
 
   .cart {
     margin: 0 0 10px;
-
-    @media (max-width: 650px) {
-      margin: 0 10px 0 0;
-    }
   }
 
   .search-input {
@@ -159,7 +171,7 @@
     }
 
     @media (max-width: 650px) {
-      flex-basis: calc(100% - 40px);
+
     }
   }
 }
@@ -177,11 +189,15 @@
     background: url('../images/icons/magnifier.svg') center no-repeat;
     opacity: 0.5;
     transform: translateY(-50%);
+
+    @media (max-width: 650px) {
+      display: none;
+    }
   }
 
   &__input {
     border: 2px solid var(--grey);
-    padding: 18px 19px;
+    padding: 15px 19px;
     font-weight: 600;
     width: 100%;
 
@@ -253,6 +269,9 @@
 }
 
 .cart {
+  width: 26px;
+  height: 25px;
+
   path {
     transition: all 0.3s ease 0s;
   }
@@ -330,19 +349,22 @@
 
   &__link {
     display: inline-block;
-    transition: all 0.3s ease 0s;
-
   }
 
   .dropdown-body {
     position: absolute;
-    display: none;
     top: 14px;
     left: -20px;
     width: 180px;
     padding: 22px 0 0;
     background-color: $grey;
     border-bottom: 2px solid $accent;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    z-index: -1000;
+    transform: translateY(-10px);
+    transition: all 0.3s ease 0s;
 
 
     .menu__link {
@@ -359,7 +381,11 @@
     }
 
     &.js-visible {
-      display: block;
+      z-index: 500;
+      opacity: 1;
+      height: auto;
+      visibility: visible;
+      transform: translateY(0);
     }
   }
 }
