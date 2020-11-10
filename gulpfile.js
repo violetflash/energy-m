@@ -136,6 +136,7 @@ function cssLibs() {
     return src([
         "node_modules/swiper/swiper-bundle.css",
         "node_modules/normalize.css/normalize.css",
+        "node_modules/overlayscrollbars/css/OverlayScrollbars.min.css",
         // "node_modules/nouislider/distribute/nouislider.css"
 
     ])
@@ -228,6 +229,7 @@ function jsLibs() {
     return src([
         //подключаем разные js в общую библиотеку.
         "node_modules/swiper/swiper-bundle.js",
+        "node_modules/overlayscrollbars/js/OverlayScrollbars.min.js",
         // "node_modules/nouislider/distribute/nouislider.js",
 
     ])

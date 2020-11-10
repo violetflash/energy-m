@@ -43,3 +43,15 @@ megaBtn.addEventListener('click', function(e) {
 //////
 //
 //////
+
+//menu-dropdown
+let dropdownBtn = document.querySelector('.has-dropdown');
+let dropdownBody = dropdownBtn.querySelector('.dropdown-body');
+
+dropdownBtn.addEventListener('mouseenter', function(e) {
+    e.preventDefault()
+    dropdownBody.classList.add('js-visible');
+});
+dropdownBtn.addEventListener('mouseleave', function(e) {
+    dropdownBody.classList.remove('js-visible');
+});

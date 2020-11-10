@@ -3,7 +3,6 @@
   margin: 0 0 0 5px;
 }
 
-
 .ibg {
   background-position: center;
   background-size: cover;
@@ -32,4 +31,50 @@
 
 ._tabs-item {
   cursor: pointer;
+}
+
+// Scroll styling
+// Scroll styling
+.os-scrollbar-track {
+  width: 4px;
+  background-color: $accent;
+}
+
+.os-scrollbar-track-off {
+  background-color: $grey;
+}
+
+.os-scrollbar-handle {
+  background-color: rgba($accent, 0.5);
+  height: 64px !important;
+}
+
+
+.os-theme-dark > .os-scrollbar > .os-scrollbar-track,
+.os-theme-dark > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle,
+.os-theme-light > .os-scrollbar > .os-scrollbar-track,
+.os-theme-light > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle {
+  border-radius: 0;
+  //background-color: $grey;
+}
+
+.os-theme-dark>.os-scrollbar>.os-scrollbar-track>.os-scrollbar-handle {
+  background: rgba($accent, 0.5);
+  cursor: pointer;
+}
+
+.os-theme-dark>.os-scrollbar>.os-scrollbar-track>.os-scrollbar-handle:hover,
+.os-theme-dark>.os-scrollbar>.os-scrollbar-track>.os-scrollbar-handle:active {
+  background: $accent;
+}
+
+.os-theme-dark>.os-scrollbar>.os-scrollbar-track {
+  background: $grey;
+
+}
+
+.os-host-resize-disabled.os-host-scrollbar-horizontal-hidden>.os-scrollbar-vertical {
+  top: -2px;
+  bottom: -2px;
+  right: -4px;
 }

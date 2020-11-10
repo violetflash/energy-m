@@ -330,6 +330,37 @@
 
   &__link {
     display: inline-block;
+    transition: all 0.3s ease 0s;
+
+  }
+
+  .dropdown-body {
+    position: absolute;
+    display: none;
+    top: 14px;
+    left: -20px;
+    width: 180px;
+    padding: 22px 0 0;
+    background-color: $grey;
+    border-bottom: 2px solid $accent;
+
+
+    .menu__link {
+      display: block;
+      padding: 10px 15px;
+      transition: all 0.1s ease 0s;
+      color: $mainColor;
+      background: transparent;
+
+      &:hover {
+        color: $white;
+        background: linear-gradient(135deg, #E62817 0%, #F26118 100%);
+      }
+    }
+
+    &.js-visible {
+      display: block;
+    }
   }
 }
 
@@ -339,6 +370,7 @@
   width: 100%;
   visibility: hidden;
   opacity: 0;
+  height: 0;
   z-index: -1000;
   transform: translateY(-10px);
   transition: all 0.3s ease 0s;
@@ -346,6 +378,7 @@
   &.opened {
     z-index: 500;
     opacity: 1;
+    height: auto;
     visibility: visible;
     transform: translateY(0);
   }
@@ -354,6 +387,7 @@
     display: flex;
     border: 4px solid $grey;
     border-bottom: none;
+    border-right: 0;
     height: 300px;
   }
 
@@ -361,7 +395,7 @@
     flex: 0 0 260px;
     margin: 0;
     padding: 24px 23px 30px;
-    border-right: 4px solid $grey;
+    //border-right: 4px solid $grey;
     overflow-y: auto;
   }
 
