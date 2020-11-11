@@ -1,16 +1,16 @@
 .header {
 
-  @media (max-width: $md3 + px) {
-    position: relative;
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 4px;
-      background: linear-gradient(135deg, #E62817 0%, #F26118 100%);
-    }
-  }
+  //@media (max-width: $md3 + px) {
+  //  position: relative;
+  //  &::before {
+  //    content: "";
+  //    position: absolute;
+  //    bottom: 0;
+  //    width: 100%;
+  //    height: 4px;
+  //    background: linear-gradient(135deg, #E62817 0%, #F26118 100%);
+  //  }
+  //}
   &__burger {
     //display: none;
     width: 25px;
@@ -109,7 +109,8 @@
     //display: none;
     visibility: hidden;
     left: 0;
-
+    top: 0;
+    bottom: 4px;
     width: calc(100% - 210px);
     opacity: 0;
     transition: all 0.3s ease 0s;
@@ -122,8 +123,6 @@
     &.js-opened {
       visibility: visible;
       opacity: 1;
-      top: 0;
-      bottom: 4px;
       transform: translateX(0);
     }
 
