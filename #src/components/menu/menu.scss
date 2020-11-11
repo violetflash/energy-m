@@ -6,6 +6,10 @@
     margin: 0 -15px;
   }
 
+  @media (max-width: 600px) {
+    display: none;
+  }
+
   &__list {
     display: flex;
     flex: 1 1 auto;
@@ -96,8 +100,10 @@
 
       &:hover {
         color: $white;
-        background: linear-gradient(135deg, #E62817 0%, #F26118 100%);
+        //background: linear-gradient(135deg, #E62817 0%, #F26118 100%);
+        background-color: $accent;;
       }
+
     }
 
     &.js-visible {
@@ -111,7 +117,7 @@
   }
 }
 
-.mega-menu {
+.mega-btn {
   padding: 22px;
   min-width: 184px;
   background: linear-gradient(135deg, #E62817 0%, #F26118 100%);
@@ -142,34 +148,34 @@
       transform: translateY(-50%) rotate(180deg);
     }
   }
+}
 
+.mega-menu {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  left: 0;
+  max-width: 100%;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  z-index: -500;
+  transform: translateY(-10px);
+  transition: all 0.3s ease 0s;
+  text-align: left;
+  color: $mainColor;
+  cursor: default;
+  white-space: normal;
 
-  &__content {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    left: 0;
-    max-width: 100%;
-    width: 100%;
-    //visibility: hidden;
-    //opacity: 0;
-    //height: 0;
-    //z-index: -500;
-    //transform: translateY(-10px);
-    transition: all 0.3s ease 0s;
-    text-align: left;
-    color: $mainColor;
-    cursor: default;
-    white-space: normal;
-
-    &.js-opened {
-      z-index: 500;
-      opacity: 1;
-      height: auto;
-      visibility: visible;
-      transform: translateY(0);
-    }
+  &.js-opened {
+    z-index: 500;
+    opacity: 1;
+    height: auto;
+    visibility: visible;
+    transform: translateY(0);
   }
+
   &__body {
     display: flex;
     border: 4px solid $grey;
@@ -184,6 +190,10 @@
     padding: 24px 23px 30px;
     //border-right: 4px solid $grey;
     overflow-y: auto;
+    
+    @media (max-width: $md3+px) {
+      flex: 0 0 200px;
+    }
   }
 
   &__tab {
@@ -205,6 +215,10 @@
     flex: 1 1 auto;
     padding: 24px 46px 30px;
     overflow-y: auto;
+
+    @media (max-width: $md2+px) {
+      padding: 24px;
+    }
   }
 
   &__caption {
@@ -240,7 +254,7 @@
         flex-basis: calc(50% - 50px);
       }
 
-      @media (max-width: 650px) {
+      @media (max-width: 550px) {
         flex-basis: 100%;
       }
     }
@@ -269,7 +283,7 @@
     @media (max-width: 1050px) {
       flex-direction: column;
       align-items: flex-start;
-      padding: 10px 10px;
+      padding: 20px 5px 20px 15px;
     }
   }
 }
@@ -301,10 +315,6 @@
     @media (max-width: 1050px) {
       padding: 0 0 20px;
     }
-    
-    //@media (max-width: 600px) {
-    //  margin: 0 0 15px;
-    //}
 
     span {
       max-width: 120px;

@@ -2,9 +2,8 @@
 // mega-menu open
 ///////
 
-let megaBtn = document.querySelector('.mega-menu');
-let megaContent = document.querySelector('.mega-menu__content');
-let menu = document.querySelector('.menu');
+let megaBtn = document.querySelector('.mega-btn');
+let megaContent = document.querySelector('.mega-menu');
 
 megaBtn.addEventListener('click', function(e) {
     this.classList.toggle('js-active');
