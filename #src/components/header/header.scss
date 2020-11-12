@@ -126,7 +126,7 @@
     width: calc(100% - 210px);
     opacity: 0;
     transition: all 0.3s ease 0s;
-    transform: translateX(100px);
+    transform: translateX(-100px);
 
     @media (min-width: 769px) {
       display: none;
@@ -244,7 +244,7 @@
       height: 100%;
       background: linear-gradient(135deg, #E62817 0%, #F26118 100%);
       opacity: 0;
-      transition: all 0.3s;
+      transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
       transform: translateX(100%);
     }
 
@@ -258,18 +258,6 @@
         transform: translateX(0);
       }
     }
-  }
-}
-
-.mobile-menu {
-  display: none;
-  width: 65px;
-  height: 61px;
-
-  @media (max-width: 600px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
 
@@ -376,6 +364,13 @@
   background: linear-gradient(135deg, #E62817 0%, #F26118 100%);
   cursor: pointer;
 
+  &.empty {
+    .cart__count,
+    .cart__total {
+      display: none;
+    }
+  }
+
   &__icon {
     width: 35px;
     height: 31px;
@@ -472,5 +467,116 @@
       background-color: $white;
 
     }
+  }
+}
+
+.mobile-menu {
+  display: none;
+  width: 65px;
+  height: 61px;
+
+  @media (max-width: 600px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__content {
+    position: fixed;
+    top: 61px;
+    right: 0;
+    left: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: $grey;
+    transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transform: translateX(100%);
+
+    &.js-opened {
+      transform: translateX(0);
+      .mobile-menu__dropdown-box,
+      .mobile-menu__link {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 2px solid $white;
+
+    .cart {
+      //margin: 0 0 0 auto;
+      background: none;
+
+      &__icon path {
+        fill: $mainColor-light
+      }
+
+      &__count {
+        background-color: $accent;
+        color: $white;
+      }
+    }
+  }
+
+  &__address {
+    flex: 0 0 45px;
+    margin: 0 40px 0 0;
+    height: 45px;
+    background: url('../images/icons/map-marker.svg') center no-repeat;
+  }
+
+  &__phone {
+    display: none;
+    flex: 0 0 45px;
+    margin: 0 40px 0 0;
+    height: 45px;
+    background: url('../images/icons/smartphone.svg') center no-repeat;
+
+    @media (max-width: 400px) {
+      display: block;
+    }
+  }
+  
+  &__body {
+    padding: 0 20px 0 0;
+    font-size: 16px;
+  }
+  
+  &__item {
+    display: block;
+    text-align: right;
+    //padding: 0 10px;
+  }
+
+  &__dropdown-box {
+    display: block;
+    text-align: right;
+    padding: 10px 0;
+    font-size: 16px;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+    .mobile-menu__list {
+      display: none;
+    }
+
+    .mobile-menu__link {
+      padding: 10px 20px;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 10px 0;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   }
 }

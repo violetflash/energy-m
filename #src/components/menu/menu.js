@@ -4,10 +4,15 @@
 
 let megaBtn = document.querySelector('.mega-btn');
 let megaContent = document.querySelector('.mega-menu');
+let hide_btn = document.querySelector('.mega-menu__hide');
 
 megaBtn.addEventListener('click', function(e) {
     this.classList.toggle('js-active');
     megaContent.classList.toggle('js-opened');
+});
+
+hide_btn.addEventListener('click', function(e) {
+    megaContent.classList.remove('js-opened');
 });
 
 
