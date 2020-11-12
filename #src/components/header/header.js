@@ -21,3 +21,17 @@ burger.addEventListener('click', function(e) {
     burger_box.classList.toggle('js-active');
     mobile_menu.classList.toggle('js-opened');
 });
+
+let mob_drop_btns = document.querySelectorAll('.mobile-menu__dropdown-btn');
+let mob_list = document.querySelectorAll('.mobile-menu__list--dropdown');
+// let mob_list_main = document.querySelector('.mobile-menu__list--main');
+
+for (let i = 0; i < mob_drop_btns.length; i++) {
+    const mob_btn = mob_drop_btns[i];
+
+    mob_btn.addEventListener('click', function(e) {
+        this.classList.toggle('js-active')
+        mob_list[i].classList.toggle('js-opened');
+        // mob_list_main.classList.toggle('js-active');
+    });
+}
