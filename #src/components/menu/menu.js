@@ -57,19 +57,19 @@ let dropdownBody = dropdownBtn.querySelector('.menu__item-dropdown');
 
 
 //ONCLICK
-dropdownBtn.addEventListener('click', function(e) {
-    // e.preventDefault()
-    dropdownBody.classList.toggle('js-visible');
-});
-
-
-// //HOVER
-// dropdownBtn.addEventListener('mouseenter', function(e) {
+// dropdownBtn.addEventListener('click', function(e) {
 //     // e.preventDefault()
-//     this.classList.add('js-active');
-//     dropdownBody.classList.add('js-visible');
+//     dropdownBody.classList.toggle('js-visible');
 // });
-// dropdownBtn.addEventListener('mouseleave', function(e) {
-//     this.classList.remove('js-active');
-//     dropdownBody.classList.remove('js-visible');
-// });
+
+
+//HOVER
+dropdownBtn.addEventListener('mouseenter', function(e) {
+    // e.preventDefault()
+    this.classList.add('js-active');
+    dropdownBody.classList.add('js-visible');
+});
+dropdownBtn.addEventListener('mouseleave', function(e) {
+    this.classList.remove('js-active');
+    dropdownBody.classList.remove('js-visible');
+});
