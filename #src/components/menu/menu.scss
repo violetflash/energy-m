@@ -2,6 +2,11 @@
   position: relative;
   display: flex;
   z-index: 15;
+  //overflow: hidden;
+
+  &.js-visible {
+    overflow: visible;
+  }
 
   @media (max-width: $md3+px) {
     margin: 0 -15px;
@@ -150,7 +155,7 @@
   max-width: 100%;
   width: 100%;
   visibility: hidden;
-  opacity: 0;
+  //opacity: 0;
   height: 0;
   z-index: -5;
   //transform: translateY(-10px);
@@ -182,12 +187,13 @@
   &__body {
     display: flex;
     border: 4px solid $grey;
+    background-color: $white;
     border-bottom: none;
     border-right: 0;
     height: 0;
-    //height: 300px;
     visibility: hidden;
-    opacity: 0;
+    overflow-Y: auto;
+    //opacity: 0;
     transition: all 0.5s ease 0s;
   }
 
@@ -208,9 +214,7 @@
     font-weight: 700;
     transition: all 0.3s ease 0s;
 
-    &:last-child {
-      margin: 0;
-    }
+
 
     &._active {
       color: $accent;

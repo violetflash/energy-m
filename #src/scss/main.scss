@@ -17,6 +17,7 @@ body {
   font-size: 14px;
   line-height: 1.2;
   color: var(--mainColor);
+  background-color: $white;
 }
 
 // Оболочка
@@ -39,6 +40,7 @@ body {
 @import "../components/global";
 @import "../components/header/header";
 @import "../components/menu/menu";
+@import "../components/breadcrumbs/breadcrumbs";
 
 
 // ===============================================================================

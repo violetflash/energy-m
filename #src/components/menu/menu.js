@@ -2,6 +2,7 @@
 // mega-menu open
 ///////
 
+let mega_menu_wrapper = document.querySelector('.menu');
 let megaBtn = document.querySelector('.mega-btn');
 let megaContent = document.querySelector('.mega-menu');
 let hide_btn = document.querySelector('.mega-menu__hide');
@@ -9,6 +10,10 @@ let hide_btn = document.querySelector('.mega-menu__hide');
 megaBtn.addEventListener('click', function(e) {
     this.classList.toggle('js-active');
     megaContent.classList.toggle('js-opened');
+
+    // setTimeout(function() {
+    //     mega_menu_wrapper.classList.toggle('js-visible')
+    // }, 100)
 });
 
 hide_btn.addEventListener('click', function(e) {

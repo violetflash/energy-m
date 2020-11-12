@@ -6,11 +6,13 @@
   <div class="site-container">
     @@include('components/header/header.html', {})
     <main class="main">
-    
+      @@include('components/breadcrumbs/breadcrumbs-main.html', {})
+
     </main>
   </div>
   @@include('components/footer/footer.html', {})
   @@include('components/modal/modal.html', {})
+  <script src="https://yastatic.net/share2/share.js" async></script>
   <script src="js/libs.min.js"></script>
   <script src="js/app.min.js"></script>
 </body>
