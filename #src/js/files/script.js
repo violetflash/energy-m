@@ -18,6 +18,7 @@ for (let anchor of anchors) {
 
 @@include('../../components/header/header.js', {})
 @@include('../../components/menu/menu.js', {})
+@@include('../../components/modal/modal.js', {})
 
 document.addEventListener("DOMContentLoaded", function() {
     //The first argument are the elements to which the plugin shall be initialized

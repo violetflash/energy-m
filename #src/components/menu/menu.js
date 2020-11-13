@@ -72,9 +72,12 @@ let dropdownBody = dropdownBtn.querySelector('.menu__item-dropdown');
 dropdownBtn.addEventListener('mouseenter', function(e) {
     // e.preventDefault()
     this.classList.add('js-active');
-    dropdownBody.classList.add('js-visible');
+    // dropdownBody.classList.add('js-visible');
+    _slideDown(dropdownBody)
 });
 dropdownBtn.addEventListener('mouseleave', function(e) {
     this.classList.remove('js-active');
-    dropdownBody.classList.remove('js-visible');
+    // dropdownBody.classList.remove('js-visible');
+    _slideUp(dropdownBody)
+
 });
