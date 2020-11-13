@@ -89,11 +89,6 @@
       display: block;
       margin: 0 auto;
       padding: 5px 12px;
-      //width: 100%;
-      //
-      //&--tel {
-      //  width: 200px;
-      //}
     }
 
     &__btn {
@@ -149,18 +144,14 @@
     &__options {
       max-width: 100%;
       width: 100%;
-      //height: 130px;
     }
 
-    &__input {
+    &__input,
+    &__textarea {
       border: none;
       border-bottom: 1px solid rgba($mainColor, 0.3);
       font-weight: 400;
       transition: all 0.3s ease 0s;
-
-      &:focus {
-        //border: 1px solid $accent;
-      }
     }
 
     &__textarea {
@@ -170,30 +161,17 @@
       min-height: 40px;
       max-height: 200px;
       outline: transparent;
-      border: none;
-      border-bottom: 1px solid rgba($mainColor, 0.3);
+
 
       &::placeholder {
         font-weight: 600;
         color: $mainColor-light;
       }
-
     }
 
     &__time {
-      //display: none;
-      height: 0;
-      opacity: 0;
-      visibility: hidden;
       max-width: 100%;
       width: 100%;
-      transition: all 0.3s ease 0s;
-
-      &.js-visible {
-        height: auto;
-        opacity: 1;
-        visibility: visible;
-      }
     }
   }
 }
