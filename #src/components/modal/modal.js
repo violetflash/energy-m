@@ -10,9 +10,9 @@ let checkbox_time = document.querySelectorAll('.request__options .checkbox__inpu
 for (let i = 0; i < checkbox_time.length; i++) {
     checkbox_time[i].addEventListener('click', function(e) {
         if (timeCall.checked) {
-            timeCall_msg.style.display = "block";
+            timeCall_msg.classList.add('js-visible')
         } else {
-            timeCall_msg.style.display = "none";
+            timeCall_msg.classList.remove('js-visible')
         }
     });
 }

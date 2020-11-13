@@ -230,6 +230,7 @@ function jsLibs() {
         //подключаем разные js в общую библиотеку.
         "node_modules/swiper/swiper-bundle.js",
         "node_modules/overlayscrollbars/js/OverlayScrollbars.min.js",
+        "node_modules/inputmask/dist/inputmask.js",
         // "node_modules/nouislider/distribute/nouislider.js",
 
     ])
