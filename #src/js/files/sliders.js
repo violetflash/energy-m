@@ -31,7 +31,7 @@ function sliders_bild_callback(params) { }
 
 
 // Project Sliders ====================================
-if (document.querySelector('.product__slider')) {
+if (document.querySelector('.aside-product__slider')) {
   var product_galleryThumbs = new Swiper('.slider-product__thumbs-body', {
     slidesPerView: 3,
     spaceBetween: 20,
