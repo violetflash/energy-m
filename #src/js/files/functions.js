@@ -10,7 +10,6 @@ function ibg() {
 }
 
 ibg();
-
 //=================================================================
 //SlideToggle
 let _slideUp = (target, duration = 500) => {

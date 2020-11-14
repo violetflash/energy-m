@@ -31,3 +31,32 @@ function sliders_bild_callback(params) { }
 
 
 // Project Sliders ====================================
+if (document.querySelector('.product__slider')) {
+  var product_galleryThumbs = new Swiper('.slider-product__thumbs-body', {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    observer: true,
+    observeParents: true,
+    centeredSlides: true,
+    speed: 800,
+    loop: true,
+
+
+  });
+  var product_galleryTop = new Swiper('.slider-product__body', {
+    slidesPerView: 1,
+    thumbs: {
+      swiper: product_galleryThumbs
+    },
+    observer: true,
+    observeParents: true,
+    speed: 800,
+    loop: true,
+    navigation: {
+      nextEl: '.slider-product__thumbs .slider-nav__next',
+      prevEl: '.slider-product__thumbs .slider-nav__prev',
+    },
+  });
+
+
+}

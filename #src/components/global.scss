@@ -8,6 +8,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  z-index: -1;
+
+  &--contain {
+    background-size: contain;
+  }
 
   img {
     width: 0;
@@ -151,4 +156,37 @@
       }
     }
   }
+}
+
+.slider-nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__arrow {
+    margin: 0 0 25px;
+
+    svg path {
+      transition: all 0.2s;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &:hover {
+      svg path {
+        stroke: $accent;
+      }
+    }
+  }
+
+  &__next {
+
+  }
+  
+  &__prev {
+    transform: rotate(180deg);
+  }
+
 }
