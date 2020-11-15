@@ -79,3 +79,40 @@ let _slideToggle = (target, duration = 500) => {
     }
 }
 //=====================================================================
+var slideOpen = false;
+//var heightChecked = false;
+var initHeight = 120;
+var intval = null;
+
+function slideToggle() {
+    window.clearInterval(intval);
+    var mdiv = document.getElementById('mdiv');
+    /*
+    if(!heightChecked) {
+        initHeight = mdiv.offsetHeight;
+        heightChecked = true;
+    }
+    */
+    if(slideOpen) {
+        var h = initHeight;
+        slideOpen = false;
+        intval = setInterval(function(){
+                h--;
+                mdiv.style.height = h + 'px';
+                if(h <= 0)
+                    window.clearInterval(intval);
+            }, 1
+        );
+    }
+    else {
+        var h = 0;
+        slideOpen = true;
+        intval = setInterval(function(){
+                h++;
+                mdiv.style.height = h + 'px';
+                if(h >= initHeight)
+                    window.clearInterval(intval);
+            }, 1
+        );
+    }
+}

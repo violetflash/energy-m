@@ -78,7 +78,7 @@
 
 }
 
-.os-host-resize-disabled.os-host-scrollbar-horizontal-hidden>.os-scrollbar-vertical {
+.os-scrollbar-vertical {
   top: -2px;
   bottom: -2px;
   right: -4px;
@@ -116,7 +116,6 @@
   &__text {
     position: relative;
     display: inline-flex;
-    align-items: center;
     font-weight: 400;
     width: 100%;
     cursor: pointer;
@@ -124,7 +123,7 @@
     &::before {
       content: "";
       align-items: flex-start;
-      margin: 0 12px 0 0;
+      margin: -2px 12px 0 0;
       flex: 0 0 20px;
       height: 20px;
       border: 2px solid #dadada;
@@ -139,7 +138,7 @@
       width: 12px;
       height: 12px;
       left: 4px;
-      top: 4px;
+      top: 2px;
       background-color: $accent;
       transform: scale(0.5);
       opacity: 0;
