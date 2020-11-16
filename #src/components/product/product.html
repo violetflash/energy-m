@@ -120,44 +120,44 @@
         </ul>
         <a class="aside-product__choose-power"
            href="#power-filter"><span>Не подходит мощность? Подберите необходимую мощность котла в несколько кликов!</span></a>
-        <form class="aside-product__filter power-filter" action="" id="power-filter">
-          <button class="power-filter__toggle" type="button">
+        <form class="aside-product__filter filter" action="" id="power-filter">
+          <button class="filter__toggle" type="button">
             <span>Уточните ваш запрос, если товар не подходит</span>
-            <svg class="power-filter__toggle-icon" width="16" height="10" viewBox="0 0 16 10" fill="none"
+            <svg class="filter__toggle-icon" width="16" height="10" viewBox="0 0 16 10" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <path d="M0 7.98359L1.86667 9.7998L8 3.83224L14.1333 9.7998L16 7.98359L8 0.199804L0 7.98359Z" fill="#252525"/>
             </svg>
           </button>
-          <div class="power-filter__body">
-            <div class="power-filter__options">
-              <div class="power-filter__select-box">
-                <label class="power-filter__label">
+          <div class="filter__body">
+            <div class="filter__options">
+              <div class="filter__select-box">
+                <label class="filter__label">
                   Топливо
-                  <select class="power-filter__select scroll">
+                  <select class="filter__select">
                     <option>Дерево</option>
                     <option>Каменный уголь</option>
                     <option>Бурый уголь</option>
                   </select>
                 </label>
-                <label class="power-filter__label">
+                <label class="filter__label">
                   Мощность
-                  <select class="power-filter__select scroll">
+                  <select class="filter__select">
                     <option>2.5 кВт</option>
                     <option>3 кВт</option>
                     <option>3,5 кВт</option>
                   </select>
                 </label>
-                <label class="power-filter__label">
+                <label class="filter__label">
                   Тяга
-                  <select class="power-filter__select scroll">
+                  <select class="filter__select">
                     <option>Уравновешенная</option>
                     <option>Естественая</option>
                     <option>Принудительная (с наддувом)</option>
                   </select>
                 </label>
               </div>
-              <p class="power-filter__caption">Дополнительная комплектация:</p>
-              <div class="power-filter__checkboxes">
+              <p class="filter__caption">Дополнительная комплектация:</p>
+              <div class="filter__checkboxes">
                 <label class="checkbox">
                   <input class="checkbox__input" type="checkbox" name="Допы">
                   <span class="checkbox__text">Дымосос</span>
@@ -176,24 +176,22 @@
                 </label>
               </div>
             </div>
-            <div class="power-filter__results">
-              <button class="power-filter__btn" type="button">
-                <span class="power-filter__show">Показать</span>
-                <span class="power-filter__count">8</span>
+            <div class="filter__results">
+              <button class="filter__btn" type="button">
+                <span class="filter__show">Показать</span>
+                <span class="filter__count">8</span>
                 подходящих товаров
               </button>
-              <div class="power-filter__content">
-                <div class="power-filter__products scroll">
-                  <div class="power-filter__item">
-                    <div class="power-filter__product filter-product">
-                      <a class="filter-product__img" href="#">
-                        <img src="images/products/06.png" alt="Котел">
-                      </a>
-                      <div class="filter-product__info">
-                        <a class="filter-product__title" href="">Котел КВм-1,1 с ТШПМ</a>
-                        <div class="filter-product__price rub">80 000</div>
-                        <p class="filter-product__details">Топливо - твердое, уголь. Завод изготовитель. Низкие цены.</p>
-                      </div>
+              <div class="filter__content">
+                <div class="filter__products scroll">
+                  <div class="filter__item product-short">
+                    <a class="product-short__img" href="#">
+                      <img src="images/products/06.png" alt="Котел">
+                    </a>
+                    <div class="product-short__info">
+                      <a class="product-short__title" href="">Котел КВм-1,1 с ТШПМ</a>
+                      <div class="product-short__price rub">80 000</div>
+                      <p class="product-short__details">Топливо - твердое, уголь. Завод изготовитель. Низкие цены.</p>
                     </div>
                     <button class="cart">
                       <svg class="cart__icon" width="30px" height="30px" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -209,16 +207,14 @@
                       </svg>
                     </button>
                   </div>
-                  <div class="power-filter__item">
-                    <div class="power-filter__product filter-product">
-                      <a class="filter-product__img" href="#">
-                        <img src="images/products/02.jpg" alt="Котел">
-                      </a>
-                      <div class="filter-product__info">
-                        <a class="filter-product__title" href="">Котел КВм-1,1 с ТШПМ</a>
-                        <div class="filter-product__price rub">80 000</div>
-                        <p class="filter-product__details">Топливо - твердое, уголь. Завод изготовитель. Низкие цены.</p>
-                      </div>
+                  <div class="filter__item product-short">
+                    <a class="product-short__img" href="#">
+                      <img src="images/products/01.jpg" alt="Котел">
+                    </a>
+                    <div class="product-short__info">
+                      <a class="product-short__title" href="">Котел КВм-1,1 с ТШПМ</a>
+                      <div class="product-short__price rub">80 000</div>
+                      <p class="product-short__details">Топливо - твердое, уголь. Завод изготовитель. Низкие цены.</p>
                     </div>
                     <button class="cart">
                       <svg class="cart__icon" width="30px" height="30px" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -234,16 +230,14 @@
                       </svg>
                     </button>
                   </div>
-                  <div class="power-filter__item">
-                    <div class="power-filter__product filter-product">
-                      <a class="filter-product__img" href="#">
-                        <img src="images/products/03.jpg" alt="Котел">
-                      </a>
-                      <div class="filter-product__info">
-                        <a class="filter-product__title" href="">Котел КВм-1,1 с ТШПМ</a>
-                        <div class="filter-product__price rub">80 000</div>
-                        <p class="filter-product__details">Топливо - твердое, уголь. Завод изготовитель. Низкие цены.</p>
-                      </div>
+                  <div class="filter__item product-short">
+                    <a class="product-short__img" href="#">
+                      <img src="images/products/02.jpg" alt="Котел">
+                    </a>
+                    <div class="product-short__info">
+                      <a class="product-short__title" href="">Котел КВм-1,1 с ТШПМ</a>
+                      <div class="product-short__price rub">80 000</div>
+                      <p class="product-short__details">Топливо - твердое, уголь. Завод изготовитель. Низкие цены.</p>
                     </div>
                     <button class="cart">
                       <svg class="cart__icon" width="30px" height="30px" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -259,16 +253,14 @@
                       </svg>
                     </button>
                   </div>
-                  <div class="power-filter__item">
-                    <div class="power-filter__product filter-product">
-                      <a class="filter-product__img" href="#">
-                        <img src="images/products/04.jpg" alt="Котел">
-                      </a>
-                      <div class="filter-product__info">
-                        <a class="filter-product__title" href="">Котел КВм-1,1 с ТШПМ</a>
-                        <div class="filter-product__price rub">80 000</div>
-                        <p class="filter-product__details">Топливо - твердое, уголь. Завод изготовитель. Низкие цены.</p>
-                      </div>
+                  <div class="filter__item product-short">
+                    <a class="product-short__img" href="#">
+                      <img src="images/products/03.jpg" alt="Котел">
+                    </a>
+                    <div class="product-short__info">
+                      <a class="product-short__title" href="">Котел КВм-1,1 с ТШПМ</a>
+                      <div class="product-short__price rub">80 000</div>
+                      <p class="product-short__details">Топливо - твердое, уголь. Завод изготовитель. Низкие цены.</p>
                     </div>
                     <button class="cart">
                       <svg class="cart__icon" width="30px" height="30px" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -284,16 +276,14 @@
                       </svg>
                     </button>
                   </div>
-                  <div class="power-filter__item">
-                    <div class="power-filter__product filter-product">
-                      <a class="filter-product__img" href="#">
-                        <img src="images/products/05.jpg" alt="Котел">
-                      </a>
-                      <div class="filter-product__info">
-                        <a class="filter-product__title" href="">Котел КВм-1,1 с ТШПМ</a>
-                        <div class="filter-product__price rub">80 000</div>
-                        <p class="filter-product__details">Топливо - твердое, уголь. Завод изготовитель. Низкие цены.</p>
-                      </div>
+                  <div class="filter__item product-short">
+                    <a class="product-short__img" href="#">
+                      <img src="images/products/04.jpg" alt="Котел">
+                    </a>
+                    <div class="product-short__info">
+                      <a class="product-short__title" href="">Котел КВм-1,1 с ТШПМ</a>
+                      <div class="product-short__price rub">80 000</div>
+                      <p class="product-short__details">Топливо - твердое, уголь. Завод изготовитель. Низкие цены.</p>
                     </div>
                     <button class="cart">
                       <svg class="cart__icon" width="30px" height="30px" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -309,16 +299,14 @@
                       </svg>
                     </button>
                   </div>
-                  <div class="power-filter__item">
-                    <div class="power-filter__product filter-product">
-                      <a class="filter-product__img" href="#">
-                        <img src="images/products/06.png" alt="Котел">
-                      </a>
-                      <div class="filter-product__info">
-                        <a class="filter-product__title" href="">Котел КВм-1,1 с ТШПМ</a>
-                        <div class="filter-product__price rub">80 000</div>
-                        <p class="filter-product__details">Топливо - твердое, уголь. Завод изготовитель. Низкие цены.</p>
-                      </div>
+                  <div class="filter__item product-short">
+                    <a class="product-short__img" href="#">
+                      <img src="images/products/05.jpg" alt="Котел">
+                    </a>
+                    <div class="product-short__info">
+                      <a class="product-short__title" href="">Котел КВм-1,1 с ТШПМ</a>
+                      <div class="product-short__price rub">80 000</div>
+                      <p class="product-short__details">Топливо - твердое, уголь. Завод изготовитель. Низкие цены.</p>
                     </div>
                     <button class="cart">
                       <svg class="cart__icon" width="30px" height="30px" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -334,31 +322,7 @@
                       </svg>
                     </button>
                   </div>
-                  <div class="power-filter__item">
-                    <div class="power-filter__product filter-product">
-                      <a class="filter-product__img" href="#">
-                        <img src="images/products/06.png" alt="Котел">
-                      </a>
-                      <div class="filter-product__info">
-                        <a class="filter-product__title" href="">Котел КВм-1,1 с ТШПМ</a>
-                        <div class="filter-product__price rub">80 000</div>
-                        <p class="filter-product__details">Топливо - твердое, уголь. Завод изготовитель. Низкие цены.</p>
-                      </div>
-                    </div>
-                    <button class="cart">
-                      <svg class="cart__icon" width="30px" height="30px" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M9.76234 19.3996H9.76372C9.76488 19.3996 9.76604 19.3994 9.76719 19.3994H25.8615C26.2577 19.3994 26.6061 19.1392 26.715 18.762L30.2658 6.45729C30.3423 6.19202 30.2887 5.90683 30.1211 5.68665C29.9532 5.46646 29.6909 5.33691 29.4123 5.33691H7.71509L7.08053 2.50954C6.99014 2.10739 6.62997 1.82129 6.21387 1.82129H0.887695C0.397382 1.82129 0 2.21474 0 2.7002C0 3.18565 0.397382 3.5791 0.887695 3.5791H5.50186C5.61421 4.08012 8.53852 17.1095 8.70681 17.859C7.7634 18.2651 7.10156 19.1964 7.10156 20.2783C7.10156 21.7322 8.29625 22.915 9.76465 22.915H25.8615C26.3518 22.915 26.7492 22.5216 26.7492 22.0361C26.7492 21.5507 26.3518 21.1572 25.8615 21.1572H9.76465C9.27526 21.1572 8.87695 20.7629 8.87695 20.2783C8.87695 19.7945 9.27387 19.4008 9.76234 19.3996V19.3996ZM28.2354 7.09473L25.1918 17.6416H10.4767L8.10947 7.09473H28.2354Z"
-                            fill="white"/>
-                        <path
-                            d="M8.87695 25.5469C8.87695 27.0007 10.0716 28.1836 11.54 28.1836C13.0084 28.1836 14.2031 27.0007 14.2031 25.5469C14.2031 24.093 13.0084 22.9102 11.54 22.9102C10.0716 22.9102 8.87695 24.093 8.87695 25.5469ZM11.54 24.668C12.0294 24.668 12.4277 25.0623 12.4277 25.5469C12.4277 26.0314 12.0294 26.4258 11.54 26.4258C11.0507 26.4258 10.6523 26.0314 10.6523 25.5469C10.6523 25.0623 11.0507 24.668 11.54 24.668Z"
-                            fill="white"/>
-                        <path
-                            d="M21.4231 25.5469C21.4231 27.0007 22.6178 28.1836 24.0862 28.1836C25.5546 28.1836 26.7493 27.0007 26.7493 25.5469C26.7493 24.093 25.5546 22.9102 24.0862 22.9102C22.6178 22.9102 21.4231 24.093 21.4231 25.5469ZM24.0862 24.668C24.5756 24.668 24.9739 25.0623 24.9739 25.5469C24.9739 26.0314 24.5756 26.4258 24.0862 26.4258C23.5968 26.4258 23.1985 26.0314 23.1985 25.5469C23.1985 25.0623 23.5968 24.668 24.0862 24.668Z"
-                            fill="white"/>
-                      </svg>
-                    </button>
-                  </div>
+
                 </div>
               </div>
             </div>
@@ -424,7 +388,7 @@
           </button>
         </div>
         <div class="product__purchase-row">
-          <a class="buy-btn" href="" data-hystmodal="buy">Купить котел КВм-1,1 с ТШПМ</a>
+          <a class="buy-btn" href="" data-hystmodal="#buy">Купить котел КВм-1,1 с ТШПМ</a>
           <a class="request-btn" href="" data-hystmodal="proposal-request">
             <svg class="request-btn__icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M14.9999 8.7099C15.5337 8.7099 15.9677 9.14392 15.9677 9.67764H16.9354C16.9354 8.77865 16.3166 8.02709 15.4838 7.81091V6.77441H14.5161V7.81091C13.6832 8.02709 13.0645 8.77865 13.0645 9.67764C13.0645 10.7451 13.9325 11.6131 14.9999 11.6131C15.5337 11.6131 15.9677 12.0471 15.9677 12.5809C15.9677 13.1146 15.5337 13.5486 14.9999 13.5486C14.4662 13.5486 14.0322 13.1146 14.0322 12.5809H13.0645C13.0645 13.4799 13.6832 14.2314 14.5161 14.4476V15.4841H15.4838V14.4476C16.3166 14.2314 16.9354 13.4799 16.9354 12.5809C16.9354 11.5134 16.0674 10.6454 14.9999 10.6454C14.4662 10.6454 14.0322 10.2114 14.0322 9.67764C14.0322 9.14392 14.4662 8.7099 14.9999 8.7099Z" fill="black"/>
@@ -436,7 +400,7 @@
           </a>
         </div>
         <div class="product__purchase-row">
-          <a class="request-btn request-btn--discount" href="" data-hystmodal="proposal-request">
+          <a class="request-btn request-btn--discount" href="" data-hystmodal="#proposal-request">
             <svg class="request-btn__icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M29.9999 2.04341C30.0022 1.49562 29.7908 0.981342 29.4047 0.595209C29.0186 0.209076 28.5033 -0.00197821 27.9565 1.39755e-05C27.4103 0.00229913 26.8961 0.216928 26.5086 0.60435C26.3446 0.768412 26.0462 1.12279 25.8829 1.31949C25.7115 1.52603 25.7398 1.83248 25.9464 2.00386C26.1528 2.17531 26.4593 2.14695 26.6307 1.9404C26.8864 1.63244 27.0978 1.38992 27.1959 1.29171C27.4009 1.08681 27.6724 0.973256 27.9606 0.972026C27.9622 0.972026 27.9636 0.972026 27.9652 0.972026C28.2501 0.972026 28.5171 1.08218 28.7174 1.28251C28.9188 1.4839 29.0291 1.75267 29.0279 2.03931C29.0266 2.32742 28.9131 2.59894 28.7082 2.80396C28.5247 2.98742 27.8941 3.48763 26.9907 4.11874C26.4562 3.20503 25.4651 2.58951 24.3323 2.58951H17.2153C16.2545 2.58951 15.3514 2.96363 14.672 3.6429L0.446013 17.8691C0.158376 18.1567 -6.10352e-05 18.5391 -6.10352e-05 18.9459C-6.10352e-05 19.3527 0.158376 19.7352 0.446013 20.0227L9.97728 29.554C10.2742 29.8509 10.6641 29.9993 11.0541 29.9993C11.4441 29.9993 11.8341 29.8508 12.131 29.554L26.357 15.328C27.0363 14.6486 27.4104 13.7455 27.4104 12.7847V5.66773C27.4104 5.45767 27.3892 5.25259 27.3489 5.05425C28.3772 4.34662 29.1322 3.75464 29.3955 3.49132C29.783 3.1039 29.9977 2.58968 29.9999 2.04341ZM26.4384 12.7847C26.4384 13.4858 26.1654 14.1449 25.6697 14.6405L11.4437 28.8667C11.229 29.0814 10.8794 29.0814 10.6646 28.8667L1.13338 19.3354C1.02937 19.2314 0.972009 19.0931 0.972009 18.9459C0.972009 18.7987 1.02931 18.6604 1.13338 18.5564L15.3594 4.33039C15.8552 3.83468 16.5142 3.56169 17.2153 3.56169H24.3322C25.1314 3.56169 25.8281 4.00917 26.1848 4.66671C25.6107 5.04687 24.9679 5.45111 24.2859 5.84861C24.2647 5.82529 24.2429 5.8022 24.2204 5.77964C23.4244 4.98371 22.1294 4.98371 21.3335 5.77964C20.5375 6.57558 20.5375 7.87062 21.3335 8.66656C21.7314 9.06453 22.2542 9.26345 22.7769 9.26345C23.2996 9.26345 23.8224 9.06453 24.2204 8.66656C24.7516 8.13529 24.9277 7.38183 24.7498 6.70267C25.343 6.35738 25.9126 6.00447 26.4382 5.66304C26.4383 5.66468 26.4384 5.66621 26.4384 5.66779V12.7847H26.4384ZM22.3428 7.44148C22.4282 7.61123 22.5995 7.70919 22.7774 7.70919C22.8509 7.70919 22.9254 7.69249 22.9955 7.65722C23.2804 7.5139 23.5643 7.36484 23.8454 7.21214C23.8482 7.48958 23.7445 7.76791 23.5332 7.97919C23.1162 8.39609 22.4379 8.39609 22.021 7.97919C21.6041 7.56224 21.6041 6.88396 22.021 6.46701C22.2295 6.25853 22.5033 6.15435 22.7771 6.15435C22.9939 6.15435 23.21 6.2208 23.3944 6.3514C23.1193 6.50093 22.8401 6.64736 22.5587 6.78898C22.3188 6.90951 22.2221 7.20171 22.3428 7.44148Z" fill="#252525"/>
               <path d="M14.4822 9.90039C14.2138 9.90039 13.9962 10.1179 13.9962 10.3864V20.6508C13.9962 20.9192 14.2138 21.1369 14.4822 21.1369C14.7506 21.1369 14.9682 20.9192 14.9682 20.6508V10.3864C14.9682 10.1179 14.7506 9.90039 14.4822 9.90039Z" fill="#252525"/>

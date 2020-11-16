@@ -229,10 +229,10 @@
   &__icon {
     width: 30px;
     height: 30px;
-    transition: all 0.3s ease 0s;
+    transition: all 0.2s ease-in-out;
 
     path {
-      transition: all 0.3s ease 0s;
+      transition: all 0.2s ease-in-out;
     }
   }
 
@@ -259,7 +259,7 @@
 
   &__icon {
     rect {
-      transition: all 0.3s ease 0s;
+      transition: all 0.3s ease-in-out;
     }
   }
 }
@@ -363,7 +363,7 @@
 
     .swiper-slide {
       border: 2px solid transparent;
-      transition: all 0.3s ease 0s;
+      transition: all 0.3s ease-in-out;
 
     }
 
@@ -426,7 +426,7 @@
     padding: 23px 22px 22px;
     border: 2px solid $grey;
     overflow: hidden;
-    transition: all 0.3s ease 0s;
+    transition: all 0.3s ease-in-out;
     cursor: default;
     
     &::after {
@@ -492,7 +492,7 @@
   }
 }
 
-.power-filter {
+.filter {
   border: 2px solid $grey;
   transition: all 0.3s ease 0s;
   
@@ -519,7 +519,7 @@
     }
 
     &.js-opened {
-      .power-filter__toggle-icon {
+      .filter__toggle-icon {
         transform: rotate(0);
       }
     }
@@ -674,7 +674,7 @@
   }
 }
 
-.filter-product {
+.product-short {
   display: flex;
   align-items: center;
 

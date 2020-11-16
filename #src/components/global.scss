@@ -189,3 +189,52 @@
   }
 
 }
+
+.amount {
+  display: flex;
+  align-items: center;
+  background-color: $grey;
+
+  &__input {
+    max-width: 30px;
+    height: 40px;
+    text-align: center;
+    background-color: $grey;
+    outline: transparent;
+    border: none;
+    font-weight: 700;
+    font-size: 12px;
+
+  }
+
+  &__button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 40px;
+    cursor: pointer;
+    //background-color: $grey;
+
+    &--minus {
+      &::after {
+        display: none;
+      }
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 2px;
+      background-color: $mainColor;
+    }
+
+    &::after {
+      width: 2px;
+      height: 10px;
+    }
+  }
+}
