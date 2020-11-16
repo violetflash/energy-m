@@ -1,11 +1,9 @@
-
 .hystmodal__window {
   padding: 30px 40px 40px;
   max-width: 450px;
   //height: 600px;
   width: 100%;
 }
-
 
 .modal {
   position: relative;
@@ -75,7 +73,6 @@
       }
     }
   }
-
 
   .request {
     margin: 0 0 30px;
@@ -198,6 +195,13 @@
       font-size: 22px;
     }
   }
+
+  .filter {
+    display: inline-block;
+    margin: 10px 0 0;
+    padding: 0 0 0 10px;
+    border: none;
+  }
 }
 
 .product-modal {
@@ -215,7 +219,8 @@
 }
 
 #message-us,
-#proposal-request {
+#proposal-request,
+#discount-request {
   .request {
 
     &__label {

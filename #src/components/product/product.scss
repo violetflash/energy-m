@@ -46,6 +46,104 @@
     line-height: 1.8;
   }
 
+  &__info-tab {
+    
+  }
+}
+
+.info-tab {
+  &__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 14px 20px 16px;
+    background-color: $grey;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 0;
+      height: 0;
+      border-top: 35px solid transparent;
+      border-right: 20px solid $white;
+      border-bottom: 35px solid transparent;
+    }
+    
+    .document {
+      margin: 0 40px 0 0;
+    }
+  }
+
+  &__body {
+    padding: 20px 20px 0 60px;
+    height: 250px;
+    border: 2px solid $grey;
+  }
+  
+  .accordion {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: -37px;
+      width: 12px;
+      height: 2px;
+      top: 50%;
+      background-color: $mainColor;
+      transform: translateY(-50%);
+      transition: all 0.3s ease-in-out;
+    }
+
+    &::after {
+      left: -25px;
+    }
+    
+    &.js-active {
+      &::before,
+      &::after {
+        background-color: $accent;
+      }
+
+      &::before {
+        transform: rotate(45deg) translateX(3px);
+      }
+      
+      &::after {
+        transform: rotate(-45deg) translateX(-3px);
+      }
+    }
+
+    span {
+      border-bottom: 1px dashed $mainColor-light;
+    }
+  }
+}
+
+.document {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    .document__icon path {
+      fill: $accent;
+    }
+  }
+  
+  &__text {
+    max-width: 130px;
+    margin: 0 0 0 10px;
+    font-weight: 600;
+  }
+
+  &__icon {
+    path {
+      transition: all 0.3s ease-in-out;
+    }
+  }
 }
 
 .purchase-btn {
@@ -437,7 +535,7 @@
       right: 0;
       top: -9px;
       transform: scale(-1, 1);
-      background-image: url("../images/products/01.png");
+      background-image: url("../images/products/06.png");
       background-size: cover;
       background-position: right center;
       background-repeat: no-repeat;
@@ -600,7 +698,7 @@
   }
 
   &__caption {
-    margin: 0 0 20px;
+    margin: 0 0 10px;
     font-weight: 700;
   }
 
@@ -710,6 +808,11 @@
     font-size: 12px;
   }
 
+}
+
+.specifications {
+  margin: 8px 0;
+  max-width: 560px;
 }
 
 

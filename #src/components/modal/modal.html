@@ -107,7 +107,7 @@
         <a class="modal__logo" href="">
           <img src="images/icons/logo.svg" alt="Энергия-М">
         </a>
-        <h1 class="modal__title">Запрос скидки</h1>
+        <h1 class="modal__title">Запрос коммерческого предложения</h1>
 
         <form class="modal__request request">
           <label class="request__label">
@@ -117,12 +117,12 @@
             <input class="request__input" type="email" name="Email" placeholder="Ваш Email" autocomplete="off" required>
           </label>
           <label class="request__message">
-            <textarea class="request__textarea" name="Текст сообщения" placeholder="Ваше сообщение" required></textarea>
+            <textarea class="request__textarea" name="Запрос коммерческого предложения" placeholder="Ваше сообщение" required></textarea>
           </label>
           <div class="filter">
             <label class="filter__label">
               Товар:
-              <select class="filter__select">
+              <select class="select-disabled">
                 <option>Котел КВМ-1,1</option>
                 <option>Котел КВМ-1,2</option>
                 <option>Котел КВМ-1,3</option>
@@ -153,6 +153,63 @@
     </div>
   </div>
 </div>
+
+<div class="hystmodal" id="discount-request" aria-hidden="true">
+  <div class="hystmodal__wrap">
+    <div class="hystmodal__window" role="dialog" aria-modal="true">
+      <button data-hystclose class="hystmodal__close">Закрыть</button>
+      <!-- Ваш HTML код модального окна -->
+      <div class="modal">
+        <a class="modal__logo" href="">
+          <img src="images/icons/logo.svg" alt="Энергия-М">
+        </a>
+        <h1 class="modal__title">Запрос скидки</h1>
+
+        <form class="modal__request request">
+          <label class="request__label">
+            <input class="request__input" type="text" name="Имя" placeholder="Ваше имя" autocomplete="off" required>
+          </label>
+          <label class="request__label">
+            <input class="request__input" type="email" name="Email" placeholder="Ваш Email" autocomplete="off" required>
+          </label>
+          <label class="request__message">
+            <textarea class="request__textarea" name="Запрос скидки" placeholder="Ваше сообщение" required></textarea>
+          </label>
+          <div class="filter">
+            <label class="filter__label">
+              Товар:
+              <select class="select-disabled">
+                <option>Котел КВМ-1,1</option>
+                <option>Котел КВМ-1,2</option>
+                <option>Котел КВМ-1,3</option>
+              </select>
+            </label>
+          </div>
+          <button class="request__btn" type="submit">Отправить
+            <svg class="request__btn-arrow" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 5.5L28 5.5M28 5.5L23.3714 1M28 5.5L23.3714 10" stroke="white" stroke-width="2"/>
+            </svg>
+          </button>
+          <p class="request__policy">Нажимая кнопку "Отправить", я соглашаюсь с
+            <a class="request__policy-link" href="">правилами</a>
+            использования персональных данных.</p>
+        </form>
+        <p class="modal__text">Или позвоните нам по одному из номеров:</p>
+        <div class="modal__contacts contacts">
+          <div class="contacts__item">
+            <a class="contacts__phone" href="tel:83852332211">8 (3852) 33-22-11</a>
+          </div>
+          <div class="contacts__item">
+            <a class="contacts__phone" href="tel:88007001579">8-800-700-15-79</a>
+            <p class="contacts__text">Бесплатно по России</p>
+          </div>
+        </div>
+        <a class="modal__link" href="" data-hystmodal="#call-request"><span>Заказать звонок</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <div class="hystmodal" id="call" aria-hidden="true">
   <div class="hystmodal__wrap">

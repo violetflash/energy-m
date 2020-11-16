@@ -21,15 +21,6 @@ product_filterBtn.addEventListener('click', function(e) {
 });
 
 
-
-
-
-
-
-
-// power-filter__btn
-
-
 const choices_element = document.querySelectorAll('.filter__select');
 
 for (let i = 0; i < choices_element.length; i++) {
@@ -40,3 +31,31 @@ for (let i = 0; i < choices_element.length; i++) {
         shouldSort: false,
     });
 }
+
+
+
+const choices_elementsDisabled = document.querySelectorAll('.select-disabled');
+
+for (let i = 0; i < choices_elementsDisabled.length; i++) {
+    const choices_elementDisabled = new Choices(choices_elementsDisabled[i], {
+
+    })
+.disable();
+}
+
+//accordion
+var acc = document.querySelectorAll(".accordion");
+var u;
+
+for (u = 0; u < acc.length; u++) {
+    acc[u].addEventListener("click", function () {
+        this.classList.toggle("js-active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    });
+}
+

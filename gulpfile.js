@@ -23,6 +23,7 @@ let path = {
         img: project_folder + "/images/",
         fonts: project_folder + "/fonts/",
         video: project_folder + "/video/",
+        doc: project_folder + "/documents/",
     },
     //для каталога с исходниками
     src: {
@@ -39,6 +40,7 @@ let path = {
         img: source_folder + "/images/**/*.{jpg,png,svg,gif,ico,webp}",
         fonts: source_folder + "/fonts/*.ttf",
         video: source_folder + "/video/**/*.*",
+        doc: source_folder + "/documents/**/*.*",
     },
     //объект watch, который содержит пути к файлам, которые мы будем слушать постоянно, т.е.
     //отлавливать их изменения и выполнять
@@ -50,6 +52,7 @@ let path = {
         js: source_folder + "/**/*.js",
         img: source_folder + "/images/**/*.{jpg,png,svg,gif,ico,webp}",
         video: source_folder + "/video/**/*.*",
+        doc: source_folder + "/documents/**/*.*",
     },
     //объект CLEAN содержит путь к каталгу проекта и отвечает за удаление этого каталога
     //каждый раз, когда мы будем запускать gulp
@@ -335,6 +338,11 @@ const copyVideo = () =>
     src(path.src.video)
         .pipe(dest(path.build.video));
 
+// auto copy documents
+const copyDoc = () =>
+    src(path.src.doc)
+        .pipe(dest(path.build.doc));
+
 //auto convert. .ttf-to-.woff + copy to dist - bad (too much time on every run)
 //to turn it on: add "fonts" to gulp.parallel series
 function fonts(params) {
@@ -429,6 +437,7 @@ function browserSync(params) {
     gulp.watch([path.watch.js], js);
     gulp.watch([path.watch.img], images);
     gulp.watch([path.watch.video], copyVideo);
+    gulp.watch([path.watch.doc], copyDoc);
 }
 
 // без этой шляпы browserSync не обновляет html
@@ -445,7 +454,7 @@ function clean(params) {
     return del(path.clean);
 }
 
-let build = gulp.series(clean, gulp.parallel(jsLibs, js, html, cssLibs, css, images, svgSprites, copyFonts, copyVideo), fontsStyle);
+let build = gulp.series(clean, gulp.parallel(jsLibs, js, html, cssLibs, css, images, svgSprites, copyFonts, copyVideo, copyDoc), fontsStyle);
 //сценарий выполнения watch
 let watch = gulp.parallel(build, watchHtml, browserSync);
 
@@ -457,6 +466,7 @@ exports.fontsStyle = fontsStyle;
 exports.svgSprites = svgSprites;
 // exports.fonts = fonts;
 exports.copyVideo = copyVideo;
+exports.copyDoc = copyDoc;
 exports.copyFonts = copyFonts;
 exports.images = images;
 exports.js = js;
