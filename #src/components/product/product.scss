@@ -51,78 +51,6 @@
   }
 }
 
-.info-tab {
-  &__header {
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding: 14px 20px 16px;
-    background-color: $grey;
-    
-    &::after {
-      content: "";
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 0;
-      height: 0;
-      border-top: 35px solid transparent;
-      border-right: 20px solid $white;
-      border-bottom: 35px solid transparent;
-    }
-    
-    .document {
-      margin: 0 40px 0 0;
-    }
-  }
-
-  &__body {
-    padding: 20px 20px 0 60px;
-    height: 250px;
-    border: 2px solid $grey;
-  }
-  
-  .accordion {
-    position: relative;
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      left: -37px;
-      width: 12px;
-      height: 2px;
-      top: 50%;
-      background-color: $mainColor;
-      transform: translateY(-50%);
-      transition: all 0.3s ease-in-out;
-    }
-
-    &::after {
-      left: -25px;
-    }
-    
-    &.js-active {
-      &::before,
-      &::after {
-        background-color: $accent;
-      }
-
-      &::before {
-        transform: rotate(45deg) translateX(3px);
-      }
-      
-      &::after {
-        transform: rotate(-45deg) translateX(-3px);
-      }
-    }
-
-    span {
-      border-bottom: 1px dashed $mainColor-light;
-    }
-  }
-}
-
 .document {
   display: flex;
   align-items: center;
@@ -810,16 +738,180 @@
 
 }
 
-.specifications {
-  margin: 8px 0;
-  max-width: 560px;
+.info-tab {
+  &__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 14px 20px 16px;
+    background-color: $grey;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 0;
+      height: 0;
+      border-top: 35px solid transparent;
+      border-right: 20px solid $white;
+      border-bottom: 35px solid transparent;
+    }
+
+    .document {
+      margin: 0 40px 0 0;
+    }
+  }
+
+  &__body {
+    padding: 20px 20px 0 60px;
+    height: 250px;
+    border: 2px solid $grey;
+
+    .os-scrollbar-vertical {
+      top: 20px !important;
+      bottom: 20px !important;
+      right: 20px;
+    }
+  }
+
+  &__control {
+    width: 100%;
+    height: 15px;
+    background-color: $grey;
+    text-align: center;;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #e7e7e7;
+    }
+
+    span {
+      position: relative;
+      padding: 0 0 0 24px;
+      font-size: 12px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 12px;
+        height: 2px;
+        background-color: $mainColor;
+      }
+    }
+  }
+
+  .accordion {
+    position: relative;
+
+    &:hover {
+      span {
+        color: $accent;
+      }
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: -37px;
+      width: 12px;
+      height: 2px;
+      top: 50%;
+      background-color: $mainColor;
+      transform: translateY(-50%);
+      transition: all 0.3s ease-in-out;
+    }
+
+    &::after {
+      left: -25px;
+    }
+
+    &.js-active {
+      color: $accent;
+
+      span {
+        border-bottom-color: $accent;
+      }
+
+      &::before,
+      &::after {
+        background-color: $accent;
+      }
+
+      &::before {
+        transform: rotate(45deg) translateX(3px);
+      }
+
+      &::after {
+        transform: rotate(-45deg) translateX(-3px);
+      }
+    }
+
+    span {
+      transition: all 0.3s ease-in-out;
+      border-bottom: 1px dashed $mainColor-light;
+    }
+  }
 }
 
+.specifications {
 
+  &__table {
+    width: 100%;
 
+    tr {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 10px;
+      background-color: $grey;
+      border-bottom: 2px solid $white;
+    }
+  }
 
+  &__label {
+    margin: 0 15px 0 0;
+    font-weight: 700;
+    max-width: 280px;
+  }
 
+  &__caption {
+    font-weight: 700;
+    margin: 0 0 5px;
+  }
 
+  &__list {
+    margin: 0 0 10px 15px;
+    list-style: disc outside none;
+    padding: 0 0 0 15px;
+  }
 
+  &__text {
+    span {
+      display: block;
+      margin: 10px 0 0;
+    }
+  }
+}
 
+.set {
+  display: flex;
+  flex-wrap: wrap;
+  
+  &__item {
+    flex: 0 1 calc(33.333% - 50px);
+    margin: 10px 50px 10px 0;
+    font-weight: 700;
+  }
 
+  &__name {
+    margin: 0 10px 0 0;
+  }
+
+  &__amount {
+    color: $mainColor-light;
+  }
+}

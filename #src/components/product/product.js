@@ -59,3 +59,15 @@ for (u = 0; u < acc.length; u++) {
     });
 }
 
+//collapse all of accordions in .product__info-tab
+let collapse_btn = document.querySelector('.info-tab__control');
+let accordions = document.querySelectorAll('.info-tab__body .accordion-content');
+let info_acc = document.querySelectorAll('.info-tab__body .accordion');
+
+collapse_btn.addEventListener('click', function(e) {
+
+    for (let i = 0; i < accordions.length ; i++) {
+        accordions[i].style.maxHeight = null;
+        info_acc[i].classList.remove('js-active');
+    }
+});
