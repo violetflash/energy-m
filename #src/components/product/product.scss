@@ -23,6 +23,7 @@
   &__aside {
     flex: 0 1 490px;
     min-width: 0;
+    margin: 0 30px 0 0;
   }
 
   &__info {
@@ -810,6 +811,9 @@
 
   .accordion {
     position: relative;
+    display: block;
+    width: 100%;
+    text-align: left;
 
     &:hover {
       span {
@@ -846,12 +850,32 @@
         background-color: $accent;
       }
 
+      // cross
+      //&::before {
+      //  transform: rotate(45deg) translate(4px, -4px);
+      //}
+      //
+      //&::after {
+      //  transform: rotate(-45deg) translate(-4px, -4px);
+      //}
+
+      // chevron down
+      //&::before {
+      //  transform: rotate(45deg) translateX(3px);
+      //}
+      //
+      //&::after {
+      //  transform: rotate(-45deg) translateX(-3px);
+      //}
+
+      // check
       &::before {
-        transform: rotate(45deg) translateX(3px);
+        transform: rotate(45deg) translate(10px, -8px);
+        width: 7px;
       }
 
       &::after {
-        transform: rotate(-45deg) translateX(-3px);
+        transform: rotate(-45deg) translate(3px, 3px);
       }
     }
 
