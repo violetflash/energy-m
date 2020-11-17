@@ -40,6 +40,20 @@ if (document.querySelector('.aside-product__slider')) {
     centeredSlides: true,
     speed: 800,
     loop: true,
+    breakpoints: {
+      400: {
+        slidesPerView: 4,
+      },
+      600: {
+        slidesPerView: 5,
+        spaceBetween: 10,
+      },
+      900: {
+        slidesPerView: 3,
+        // centeredSlides: false,
+      },
+
+    }
 
 
   });
