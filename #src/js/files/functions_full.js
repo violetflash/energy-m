@@ -161,4 +161,12 @@ let _slideToggle = (target, duration = 500) => {
 
 //=================================================================
 
-//=================================================================
+//TEXT SLICE WITH ...======================================================
+function text_cut(text, limit) {
+    text = text.trim();
+    if( text.length <= limit) return text;
+
+    text = text.slice(0, limit);
+
+    return text.trim() + "...";
+}

@@ -238,6 +238,7 @@ function jsLibs() {
         "node_modules/inputmask/dist/inputmask.js",
         "node_modules/choices.js/public/assets/scripts/choices.min.js",
         "node_modules/nouislider/distribute/nouislider.js",
+        "node_modules/shave/dist/shave.js",
 
     ])
         //pipe - функция, внутри которой мы пишем команды для gulp

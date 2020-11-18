@@ -3,7 +3,7 @@ let product_filterBody = document.querySelector('.filter__body');
 let product_filterBtn = document.querySelector('.filter__btn');
 let product_filterResult = document.querySelector('.filter__content');
 
-product_filter.addEventListener('click', function(e) {
+product_filter.addEventListener('click', function (e) {
     // this.classList.toggle('js-opened');
     // product_filterBody.classList.toggle('js-visible');
     _slideToggle(product_filterBody);
@@ -11,7 +11,7 @@ product_filter.addEventListener('click', function(e) {
 
 let btnText = document.querySelector('.filter__show');
 
-product_filterBtn.addEventListener('click', function(e) {
+product_filterBtn.addEventListener('click', function (e) {
 
     product_filterResult.classList.toggle('js-opened');
     if (btnText.innerHTML === 'Показать') {
@@ -34,14 +34,11 @@ for (let i = 0; i < choices_element.length; i++) {
 }
 
 
-
 const choices_elementsDisabled = document.querySelectorAll('.select-disabled');
 
 for (let i = 0; i < choices_elementsDisabled.length; i++) {
-    const choices_elementDisabled = new Choices(choices_elementsDisabled[i], {
-
-    })
-.disable();
+    const choices_elementDisabled = new Choices(choices_elementsDisabled[i], {})
+        .disable();
 }
 
 //accordion
@@ -65,9 +62,9 @@ let collapse_btn = document.querySelector('.info-tab__control');
 let accordions = document.querySelectorAll('.info-tab__body .accordion-content');
 let info_acc = document.querySelectorAll('.info-tab__body .accordion');
 
-collapse_btn.addEventListener('click', function(e) {
+collapse_btn.addEventListener('click', function (e) {
 
-    for (let i = 0; i < accordions.length ; i++) {
+    for (let i = 0; i < accordions.length; i++) {
         accordions[i].style.maxHeight = null;
         info_acc[i].classList.remove('js-active');
     }

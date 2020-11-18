@@ -93,24 +93,23 @@ function slideToggle() {
         heightChecked = true;
     }
     */
-    if(slideOpen) {
+    if (slideOpen) {
         var h = initHeight;
         slideOpen = false;
-        intval = setInterval(function(){
+        intval = setInterval(function () {
                 h--;
                 mdiv.style.height = h + 'px';
-                if(h <= 0)
+                if (h <= 0)
                     window.clearInterval(intval);
             }, 1
         );
-    }
-    else {
+    } else {
         var h = 0;
         slideOpen = true;
-        intval = setInterval(function(){
+        intval = setInterval(function () {
                 h++;
                 mdiv.style.height = h + 'px';
-                if(h >= initHeight)
+                if (h >= initHeight)
                     window.clearInterval(intval);
             }, 1
         );

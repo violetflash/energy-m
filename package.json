@@ -44,6 +44,7 @@
     "normalize.css": "^8.0.1",
     "nouislider": "^14.6.2",
     "overlayscrollbars": "^1.13.0",
+    "shave": "^2.5.10",
     "stylelint": "^13.7.2",
     "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
     "stylelint-order": "^4.1.0",
