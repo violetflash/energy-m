@@ -12,6 +12,7 @@ product_filter.addEventListener('click', function(e) {
 let btnText = document.querySelector('.filter__show');
 
 product_filterBtn.addEventListener('click', function(e) {
+
     product_filterResult.classList.toggle('js-opened');
     if (btnText.innerHTML === 'Показать') {
         btnText.innerHTML = 'Скрыть';
