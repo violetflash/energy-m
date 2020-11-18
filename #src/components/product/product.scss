@@ -11,8 +11,9 @@
     }
   }
 
-  &__inner {
+  &__top {
     display: flex;
+    padding: 0 0 100px;
 
     @media (max-width: 1250px) {
       display: block;
@@ -1138,8 +1139,26 @@
   }
 }
 
-.specifications {
+.set {
+  display: flex;
+  flex-wrap: wrap;
+  
+  &__item {
+    flex: 0 1 calc(33.333% - 50px);
+    margin: 10px 50px 10px 0;
+    font-weight: 700;
+  }
 
+  &__name {
+    margin: 0 10px 0 0;
+  }
+
+  &__amount {
+    color: $mainColor-light;
+  }
+}
+
+.details {
   &__table {
     width: 100%;
 
@@ -1155,7 +1174,7 @@
         flex-direction: column;
       }
     }
-    
+
     td {
       margin: 0 40px 0 0;
 
@@ -1167,7 +1186,6 @@
 
   &__label {
     font-weight: 700;
-    max-width: 280px;
   }
 
   &__caption {
@@ -1187,23 +1205,62 @@
       margin: 10px 0 0;
     }
   }
-}
 
-.set {
-  display: flex;
-  flex-wrap: wrap;
-  
-  &__item {
-    flex: 0 1 calc(33.333% - 50px);
-    margin: 10px 50px 10px 0;
-    font-weight: 700;
+  &__tab-box {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 0 20px;
+    border: 2px solid $grey;
   }
 
-  &__name {
-    margin: 0 10px 0 0;
+  &__tab {
+    padding: 17px 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    border-right: 2px solid $grey;
+    
+    &:last-child {
+      border-right: none;
+    }
+
+    &.js-active {
+      color: $accent;
+      background-color: $grey;
+    }
   }
 
-  &__amount {
-    color: $mainColor-light;
+  &__specifications {
+    display: flex;
+    
+    tr {
+      position: relative;
+      margin: 0 40px 0 0;
+
+      &::after {
+        content: "?";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        position: absolute;
+        right: -40px;
+        width: 20px;
+        height: 20px;
+        background-color: $grey;
+      }
+    }
+  }
+
+  &__tooltip {
+    
+    position: absolute;
+    top: -50px;
+    right: 0;
+    width: 160px;
+    text-align: center;
+    height: auto;
+    background-color: $grey;
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.1));
   }
 }

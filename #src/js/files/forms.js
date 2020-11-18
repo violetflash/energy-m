@@ -9,11 +9,11 @@ for (let i = 0; i < tabs.length; i++) {
         tabs_item.addEventListener('click', function (e) {
             for (let i = 0; i < tabs_items.length; i++) {
                 let tabs_item = tabs_items[i];
-                tabs_item.classList.remove('_active');
-                tabs_content[i].classList.remove('_active');
+                tabs_item.classList.remove('js-active');
+                tabs_content[i].classList.remove('js-active');
             }
-            tabs_item.classList.add('_active');
-            tabs_content[i].classList.add('_active');
+            tabs_item.classList.add('js-active');
+            tabs_content[i].classList.add('js-active');
             e.preventDefault();
         });
     }
