@@ -242,6 +242,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+
+  &--contain {
+    background-size: contain;
+  }
   
   img {
     width: 0;
@@ -254,8 +258,10 @@
   }
 }
 
-
-
-
-
-
+// Accordion
+.accordion-content {
+  margin: 8px 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
