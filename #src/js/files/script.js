@@ -154,15 +154,9 @@ if
         });
     });
 }
+// END OF NOUISLIDER SCRIPT
 
-//TRUNCATE TEXT with ...
-var trunc_elements = document.querySelectorAll('.additional__description');
-for (let i = 0; i < trunc_elements.length; i++) {
-    trunc_element = trunc_elements[i];
-    shave(trunc_element, 68);
-}
 
-let example = document.getElementById('example');
 
-shave(example, 68);
+
 

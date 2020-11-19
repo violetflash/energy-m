@@ -35,7 +35,10 @@
     flex: 0 1 auto;
   }
 
-  &__info-top {
+}
+
+.info-product {
+  &__top {
     @media (max-width: 1250px) {
       display: none;
     }
@@ -279,6 +282,7 @@
   align-items: center;
 
   &:hover {
+    color: $accent;
     .document__icon path {
       fill: $accent;
     }
@@ -288,11 +292,12 @@
     max-width: 130px;
     margin: 0 0 0 10px;
     font-weight: 600;
+    transition: all 0.15s ease-in-out;
   }
 
   &__icon {
     path {
-      transition: all 0.3s ease-in-out;
+      transition: all 0.15s ease-in-out;
     }
   }
 }
@@ -1164,6 +1169,7 @@
   }
 }
 
+//MAIN TABS
 .details {
   &__table {
     width: 100%;
@@ -1322,7 +1328,6 @@
       border-top: 14px solid $white;
       border-right: 10px solid transparent;
     }
-
   }
 
   &__tooltip-text {
@@ -1335,27 +1340,56 @@
     overflow-y: auto;
     background-color: $white;
     z-index: 20;
+  }
 
+  &__documents {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .document {
+      flex: 0 0 173px;
+      margin: 0 50px 30px 0;
+    }
   }
 }
 
 .additional {
+  display: flex;
+  flex-wrap: wrap;
 
   &__item-wrapper {
+    margin: 0 40px 20px 0;
     display: flex;
+    flex-basis: calc(50% - 50px);
     align-items: center;
   }
   
   &__item {
-    display: block;
-    margin: 0 20px 0 0;
     display: flex;
     align-items: center;
+    margin: 0 20px 0 0;
+    flex: 0 0 230px;
+    padding: 10px;
+    border: 2px solid $grey;
+    transition: all 0.3s ease-in-out;
+    
+    &:hover {
+      border-color: $accent;
+    }
   }
 
   &__image {
-    width: 60px;
-    height: 66px;
+    width: 40px;
+    height: 45px;
+    margin: 0 10px 0 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
   }
 
   &__info {
@@ -1366,6 +1400,7 @@
   }
 
   &__name {
+    margin: 0 0 5px;
     font-weight: 700;
   }
 
@@ -1375,10 +1410,6 @@
   }
 
   &__description {
-    display: block;
     max-width: 320px;
-    //height: 68px;
-    padding: 10px;
-    border: 1px solid black;
   }
 }

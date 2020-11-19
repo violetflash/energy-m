@@ -14,26 +14,27 @@ for (let i = 0; i < tabs.length; i++) {
             }
             tabs_item.classList.add('js-active');
             tabs_content[i].classList.add('js-active');
+            shave('.additional__description', 68);
             e.preventDefault();
         });
     }
 }
 
-//Also working tabs code
-// let tabs = document.querySelectorAll('._tabs')
-// let btns = tabs.querySelectorAll('._tabs-item')
-// let items = tabs.querySelectorAll('._tabs-content')
+// Also working tabs code
+// let tabs_all = document.querySelectorAll('._tabs')
+// let btns_all = tabs_all.querySelectorAll('._tabs-item')
+// let items_all = tabs_all.querySelectorAll('._tabs-content')
 //
 // function change(arr, i) {
 //     arr.forEach( item => {
-//         item.forEach( i => {i.classList.remove('_active')})
-//         item[i].classList.add('_active')
+//         item.forEach( i => {i.classList.remove('js-active')})
+//         item[i].classList.add('js-active')
 //     })
 // }
 //
-// for(let i = 0; i < btns.length; i++) {
-//     btns[i].addEventListener('click', () => {
-//         change([btns, items], i)
+// for(let i = 0; i < btns_all.length; i++) {
+//     btns_all[i].addEventListener('click', () => {
+//         change([btns_all, items_all], i)
 //     })
 // }
 
