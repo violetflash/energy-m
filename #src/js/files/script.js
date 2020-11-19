@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
 @@include('../../components/menu/menu.js', {})
 @@include('../../components/modal/modal.js', {})
 @@include('../../components/product/product.js', {})
+@@include('../../components/photo/photo.js', {})
 
 
 //Range Slider (NOUISLIDER)
