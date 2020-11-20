@@ -7,6 +7,10 @@
 
   &__title {
     margin: 0 0 40px;
+    
+    @media (max-width: 650px) {
+      margin: 0 0 20px;
+    }
   }
   
   &__desktop {

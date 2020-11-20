@@ -243,6 +243,7 @@ function jsLibs() {
         "node_modules/lightgallery.js/dist/js/lightgallery.min.js",
         "node_modules/lg-thumbnail.js/dist/lg-thumbnail.min.js",
         "node_modules/smooth-scroll/dist/smooth-scroll.polyfills.js",
+        "node_modules/sticky-sidebar/dist/sticky-sidebar.js",
 
     ])
         //pipe - функция, внутри которой мы пишем команды для gulp

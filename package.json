@@ -48,6 +48,7 @@
     "overlayscrollbars": "^1.13.0",
     "shave": "^2.5.10",
     "smooth-scroll": "^16.1.3",
+    "sticky-sidebar": "^3.3.1",
     "stylelint": "^13.7.2",
     "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
     "stylelint-order": "^4.1.0",
