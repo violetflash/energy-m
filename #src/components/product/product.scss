@@ -1,6 +1,5 @@
 .product {
 
-
   &.outstock {
     .purchase-info__stock-available,
     .purchase-info__city {
@@ -1163,7 +1162,7 @@
 
   &__name {
     margin: 0 10px 0 0;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
       color: $accent;

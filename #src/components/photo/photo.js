@@ -1,15 +1,3 @@
-// let smallImgDiv = document.getElementById('thumbs-div');
-//
-// smallImgDiv.addEventListener('click', (e) => {
-//     let targetElement = e.target || e.srcElement;
-//     let tagName = targetElement.tagName;
-//
-//     if(tagName === "IMG") {
-//         document.getElementById('big-image').src = targetElement.getAttribute("src");
-//         document.getElementById("main-image-link").href = 'link' + targetElement.getAttribute("data-link") + '.html';
-//     }
-// });
-
 //Клик на миниатюре меняет src аттрибут у главной картинки
 let img_thumbs = document.querySelectorAll('.photo__img');
 let img_thumbsDiv = document.querySelectorAll('.photo__thumb');
@@ -31,5 +19,8 @@ for (let i = 0; i < img_thumbs.length; i++) {
         modal_img.src = img_thumb.getAttribute("src");
     });
 }
+
+//LightGallery plugin initialize
+lightGallery(document.getElementById('lightgallery'));
 
 

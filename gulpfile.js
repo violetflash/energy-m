@@ -143,6 +143,7 @@ function cssLibs() {
         // "node_modules/choices.js/public/assets/styles/base.min.css",
         "node_modules/choices.js/public/assets/styles/choices.min.css",
         // "node_modules/nouislider/distribute/nouislider.css"
+        "node_modules/lightgallery.js/dist/css/lightgallery.min.css",
 
     ])
         .pipe(sourcemaps.init())
@@ -239,6 +240,9 @@ function jsLibs() {
         "node_modules/choices.js/public/assets/scripts/choices.min.js",
         "node_modules/nouislider/distribute/nouislider.js",
         // "node_modules/shave/dist/shave.js",
+        "node_modules/lightgallery.js/dist/js/lightgallery.min.js",
+        "node_modules/lg-thumbnail.js/dist/lg-thumbnail.min.js",
+        "node_modules/smooth-scroll/dist/smooth-scroll.polyfills.js",
 
     ])
         //pipe - функция, внутри которой мы пишем команды для gulp
