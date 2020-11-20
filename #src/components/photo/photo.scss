@@ -1,5 +1,10 @@
 .photo {
-  padding: 0 0 200px;
+  padding: 0 0 100px;
+  
+  @media (max-width: 850px) {
+    padding: 0 0 50px;
+  }
+
   &__title {
     margin: 0 0 40px;
   }

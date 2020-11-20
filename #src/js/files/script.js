@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
 @@include('../../components/modal/modal.js', {})
 @@include('../../components/product/product.js', {})
 @@include('../../components/photo/photo.js', {})
+@@include('../../components/accordions/accordions.js', {})
 
 
 //Range Slider (NOUISLIDER)

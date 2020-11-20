@@ -1,0 +1,161 @@
+.accordions {
+  padding-bottom: 400px;
+  &__inner {
+    display: flex;
+  }
+
+  &__body {
+    flex: 0 1 900px;
+    margin: 0 20px 0 0;
+  }
+
+  &__aside {
+    flex: 0 0 290px;
+  }
+
+  &__accordion {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 0;
+    padding: 22px 23px 21px 30px;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: $grey;
+
+    &:hover {
+      .accordion__icon path {
+        fill: $accent;
+      }
+    }
+
+    &:first-child {
+      margin: 0;
+    }
+
+    &.js-active {
+      .accordion__icon {
+        transform: rotate(0);
+
+        path {
+          fill: $accent;
+        }
+      }
+    }
+    
+    &::after {
+      content: "";
+      position: absolute;
+    }
+  }
+
+  .accordion {
+    &__icon {
+      transform: rotate(180deg);
+      transition: all 0.2s ease-in-out;
+
+      path {
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+
+  .accordion-content {
+    margin: 0;
+    border: 2px solid $grey;
+  }
+
+  &__content {
+    padding: 22px 30px 40px;
+  }
+
+  &__text {
+    line-height: 1.8;
+
+    &--float {
+
+    }
+  }
+
+  &__list {
+    margin: 30px 0 0;
+    font-weight: 600;
+  }
+
+  &__item {
+    position: relative;
+    margin: 0 0 20px;
+    padding: 0 0 0 40px;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 25px;
+      height: 2px;
+      background-color: $mainColor;
+    }
+  }
+
+  &__figure {
+    float: left;
+  }
+
+  &__figcaption {
+    font-weight: 600;
+  }
+
+  &__link {
+    display: block;
+    margin: 0 0 21px;
+    font-weight: 600;
+    text-decoration: underline;
+    transition: all 0.2s ease-in-out;
+
+    &:hover,
+    &:active,
+    &.js-active {
+      color: $accent;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__nav {
+    padding: 20px;
+    border: 2px solid $grey;
+  }
+
+  .request {
+    &__label {
+      flex-direction: column;
+    }
+
+    &__text {
+      margin: 0 0 10px;
+      font-size: 12px;
+      width: 100%;
+    }
+
+    &__input {
+      margin: 0;
+      padding: 11px 20px;
+      width: 100%;
+      background-color: $grey;
+    }
+
+    &__btn {
+      height: 40px;
+      bottom: 0;
+    }
+  }
+}
