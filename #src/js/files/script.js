@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
 @@include('../../components/photo/photo.js', {})
 @@include('../../components/accordions/accordions.js', {})
 @@include('../../components/bar/bar.js', {})
+@@include('../../components/selection/selection.js', {})
 
 
 //Range Slider (NOUISLIDER)
