@@ -18,6 +18,10 @@ body {
   line-height: 1.2;
   color: var(--mainColor);
   background-color: $white;
+
+  &.js-overflow {
+    overflow: hidden;
+  }
 }
 
 // Оболочка
@@ -46,6 +50,7 @@ body {
 @import "../components/tabs/tabs";
 @import "../components/photo/photo";
 @import "../components/accordions/accordions";
+@import "../components/bar/bar";
 @import "../components/similar/similar";
 
 
