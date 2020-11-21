@@ -173,8 +173,12 @@
     height: 20px;
     background-color: $grey;
     cursor: help;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
+      background-color: $accent;
+      color: $white;
+
       .details__tooltip-wrapper {
         display: block;
       }
@@ -213,6 +217,7 @@
     font-weight: 600;
     font-size: 12px;
     overflow-y: auto;
+    color: $mainColor;
     background-color: $white;
     z-index: 20;
   }
