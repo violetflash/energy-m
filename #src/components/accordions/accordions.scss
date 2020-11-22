@@ -112,32 +112,6 @@
     }
   }
 
-  &__list {
-    margin: 30px 0 0;
-    font-weight: 600;
-  }
-
-  &__item {
-    position: relative;
-    margin: 0 0 20px;
-    padding: 0 0 0 40px;
-
-    &:last-child {
-      margin: 0;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 25px;
-      height: 2px;
-      background-color: $mainColor;
-    }
-  }
-
   &__figure {
     float: left;
   }

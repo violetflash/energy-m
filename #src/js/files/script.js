@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 @@include('../../components/accordions/accordions.js', {})
 @@include('../../components/bar/bar.js', {})
 @@include('../../components/selection/selection.js', {})
+@@include('../../components/articles/articles.js', {})
 
 
 //Range Slider (NOUISLIDER)
