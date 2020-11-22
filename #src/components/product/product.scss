@@ -847,7 +847,7 @@
   }
 
   &__body {
-    display: none;
+    //display: none;
 
     &.js-visible {
       display: block;
@@ -1093,7 +1093,7 @@
 
   &__body {
     padding: 20px 20px 0 60px;
-    height: 350px;
+    height: 443px;
     border: 2px solid $grey;
 
     @media (max-width: 600px) {

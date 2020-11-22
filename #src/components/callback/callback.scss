@@ -1,0 +1,42 @@
+.callback {
+  background-color: $grey;
+  margin: 0 0 100px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    height: 124px;
+    background-image: url('../images/icons/callback-bg.svg');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  .request {
+    margin: 40px 0 0;
+
+    &__label {
+      //flex-direction: column;
+    }
+
+    &__text {
+      margin: 0 50px 0 0;
+      width: 100%;
+    }
+
+    &__input {
+      margin: 0;
+      height: 60px;
+      padding: 11px 20px;
+      width: 100%;
+      background-color: $grey;
+    }
+
+    &__btn {
+      height: 60px;
+      bottom: 0;
+    }
+  }
+
+}
