@@ -108,3 +108,112 @@ if (document.querySelector('.similar__slider')) {
     }
   });
 }
+
+if (document.querySelector('.documents__slider')) {
+  var patentsSlider = new Swiper('.patent-slider', {
+    slidesPerView: 2,
+    spaceBetween: 19,
+    observer: true,
+    observeParents: true,
+    speed: 800,
+    // autoplay: true,
+    loop: true,
+    navigation: {
+      nextEl: '.patent-nav .slider-nav__next',
+      prevEl: '.patent-nav .slider-nav__prev',
+    },
+    breakpoints: {
+      280: {
+        slidesPerView: 1,
+      },
+      400: {
+        slidesPerView: 2,
+      },
+      600: {
+        slidesPerView: 2,
+
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 2,
+      },
+      1200: {
+        slidesPerView: 2,
+      },
+    }
+  });
+
+  var patentsSlider = new Swiper('.cert-slider', {
+    slidesPerView: 2,
+    spaceBetween: 19,
+    observer: true,
+    observeParents: true,
+    speed: 800,
+    // autoplay: true,
+    loop: true,
+    navigation: {
+      nextEl: '.cert-nav .slider-nav__next',
+      prevEl: '.cert-nav .slider-nav__prev',
+    },
+    breakpoints: {
+      280: {
+        slidesPerView: 1,
+      },
+      400: {
+        slidesPerView: 2,
+      },
+      600: {
+        slidesPerView: 2,
+
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 2,
+      },
+      1200: {
+        slidesPerView: 2,
+      },
+    }
+  });
+
+  var patentsSlider = new Swiper('.award-slider', {
+    slidesPerView: 2,
+    spaceBetween: 19,
+    observer: true,
+    observeParents: true,
+    speed: 800,
+    // autoplay: true,
+    loop: true,
+    navigation: {
+      nextEl: '.award-nav .slider-nav__next',
+      prevEl: '.award-nav .slider-nav__prev',
+    },
+    breakpoints: {
+      280: {
+        slidesPerView: 1,
+      },
+      400: {
+        slidesPerView: 2,
+      },
+      600: {
+        slidesPerView: 2,
+
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 2,
+      },
+      1200: {
+        slidesPerView: 2,
+      },
+    }
+  });
+}
+
+
