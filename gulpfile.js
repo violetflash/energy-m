@@ -127,7 +127,7 @@ function html() {
         //сборка файлов через fileinclude
         .pipe(fileinclude())
         // .pipe(webphtml())
-        .pipe(htmlValidator())
+        // .pipe(htmlValidator())
         .pipe(bemValidator())
         .pipe(dest(path.build.html)) //выгрузка
         .pipe(browsersync.stream())
