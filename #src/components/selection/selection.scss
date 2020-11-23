@@ -81,10 +81,14 @@
       left: -37px;
 
       &::before {
-        left: 23%;
+        left: 30%;
         right: auto;
-        transform: translateX(50%) rotate(19deg);
+        transform: translateX(50%) rotate(0);
       }
+    }
+
+    &__text {
+      width: unset;
     }
   }
 

@@ -17,6 +17,17 @@
   }
 
   .article-card {
+    
+    &:hover {
+      .article-card__img {
+        transform: translateX(-100px);
+      }
+      .article-card__icon {
+        svg path {
+          stroke: $accent;
+        }
+      }
+    }
 
     &--text {
       display: flex;
@@ -48,9 +59,20 @@
     }
 
     &__figure {
+      position: relative;
       &::after {
         display: none;
       }
+    }
+    
+    &__img {
+      position: absolute;
+      left: 0;
+      width: 140%;
+      max-width: unset;;
+      backface-visibility: hidden;
+      transform: translateX(0) translateZ(0);
+      transition: all 5s ease-out;
     }
 
     &__figcaption {
@@ -68,6 +90,10 @@
       color: $white;
       text-transform: uppercase;
       max-width: 165px;
+    }
+
+    &__icon svg path {
+      transition: all 0.3s ease-in-out;
     }
   }
 }

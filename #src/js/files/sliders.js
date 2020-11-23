@@ -79,7 +79,7 @@ if (document.querySelector('.similar__slider')) {
     observer: true,
     observeParents: true,
     speed: 800,
-    // autoplay: true,
+    autoplay: true,
     loop: true,
     navigation: {
       nextEl: '.similar .slider-nav__next',
@@ -145,7 +145,7 @@ if (document.querySelector('.documents__slider')) {
     }
   });
 
-  var patentsSlider = new Swiper('.cert-slider', {
+  var certSlider = new Swiper('.cert-slider', {
     slidesPerView: 2,
     spaceBetween: 19,
     observer: true,
@@ -180,7 +180,7 @@ if (document.querySelector('.documents__slider')) {
     }
   });
 
-  var patentsSlider = new Swiper('.award-slider', {
+  var awardSlider = new Swiper('.award-slider', {
     slidesPerView: 2,
     spaceBetween: 19,
     observer: true,
@@ -214,6 +214,77 @@ if (document.querySelector('.documents__slider')) {
       },
     }
   });
+
+  var thanksSlider = new Swiper('.thanks-slider', {
+    slidesPerView: 1,
+    spaceBetween: 19,
+    observer: true,
+    observeParents: true,
+    speed: 800,
+    // autoplay: true,
+    loop: true,
+    navigation: {
+      nextEl: '.thanks-nav .slider-nav__next',
+      prevEl: '.thanks-nav .slider-nav__prev',
+    },
+    breakpoints: {
+      280: {
+        slidesPerView: 1,
+      },
+      400: {
+        slidesPerView: 1,
+      },
+      600: {
+        slidesPerView: 1,
+
+      },
+      768: {
+        slidesPerView: 1,
+      },
+      992: {
+        slidesPerView: 1,
+      },
+      1200: {
+        slidesPerView: 1,
+      },
+    }
+  });
+
+  var attestationSlider = new Swiper('.attestation-slider', {
+    slidesPerView: 1,
+    spaceBetween: 19,
+    observer: true,
+    observeParents: true,
+    speed: 800,
+    // autoplay: true,
+    loop: true,
+    navigation: {
+      nextEl: '.attestation-nav .slider-nav__next',
+      prevEl: '.attestation-nav .slider-nav__prev',
+    },
+    breakpoints: {
+      280: {
+        slidesPerView: 1,
+      },
+      400: {
+        slidesPerView: 1,
+      },
+      600: {
+        slidesPerView: 1,
+
+      },
+      768: {
+        slidesPerView: 1,
+      },
+      992: {
+        slidesPerView: 1,
+      },
+      1200: {
+        slidesPerView: 1,
+      },
+    }
+  });
+
 }
 
 
