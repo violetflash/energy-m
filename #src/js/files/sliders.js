@@ -89,6 +89,9 @@ if (document.querySelector('.similar__slider')) {
       280: {
         slidesPerView: 1,
       },
+      330: {
+        slidesPerView: 2,
+      },
       400: {
         slidesPerView: 2,
       },
@@ -126,6 +129,9 @@ if (document.querySelector('.documents__slider')) {
       280: {
         slidesPerView: 1,
       },
+      330: {
+        slidesPerView: 2,
+      },
       400: {
         slidesPerView: 2,
       },
@@ -160,6 +166,9 @@ if (document.querySelector('.documents__slider')) {
     breakpoints: {
       280: {
         slidesPerView: 1,
+      },
+      330: {
+        slidesPerView: 2,
       },
       400: {
         slidesPerView: 2,
@@ -196,6 +205,9 @@ if (document.querySelector('.documents__slider')) {
       280: {
         slidesPerView: 1,
       },
+      330: {
+        slidesPerView: 2,
+      },
       400: {
         slidesPerView: 2,
       },
@@ -230,6 +242,9 @@ if (document.querySelector('.documents__slider')) {
     breakpoints: {
       280: {
         slidesPerView: 1,
+      },
+      330: {
+        slidesPerView: 2,
       },
       400: {
         slidesPerView: 2,
@@ -266,6 +281,9 @@ if (document.querySelector('.documents__slider')) {
       280: {
         slidesPerView: 1,
       },
+      330: {
+        slidesPerView: 2,
+      },
       400: {
         slidesPerView: 2,
       },
@@ -294,7 +312,7 @@ if (document.querySelector('.about__slider')) {
     observer: true,
     observeParents: true,
     speed: 800,
-    // autoplay: true,
+    autoplay: true,
     loop: true,
     navigation: {
       nextEl: '.about .slider-nav__next',
