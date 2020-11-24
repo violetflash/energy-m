@@ -129,17 +129,17 @@ if (document.querySelector('.documents__slider')) {
       400: {
         slidesPerView: 2,
       },
-      600: {
-        slidesPerView: 2,
+      650: {
+        slidesPerView: 1,
 
       },
       768: {
         slidesPerView: 2,
       },
       992: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
-      1200: {
+      1250: {
         slidesPerView: 2,
       },
     }
@@ -164,17 +164,17 @@ if (document.querySelector('.documents__slider')) {
       400: {
         slidesPerView: 2,
       },
-      600: {
-        slidesPerView: 2,
+      650: {
+        slidesPerView: 1,
 
       },
       768: {
         slidesPerView: 2,
       },
       992: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
-      1200: {
+      1250: {
         slidesPerView: 2,
       },
     }
@@ -199,17 +199,17 @@ if (document.querySelector('.documents__slider')) {
       400: {
         slidesPerView: 2,
       },
-      600: {
-        slidesPerView: 2,
+      650: {
+        slidesPerView: 1,
 
       },
       768: {
         slidesPerView: 2,
       },
       992: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
-      1200: {
+      1250: {
         slidesPerView: 2,
       },
     }
@@ -232,14 +232,14 @@ if (document.querySelector('.documents__slider')) {
         slidesPerView: 1,
       },
       400: {
-        slidesPerView: 1,
+        slidesPerView: 2,
       },
-      600: {
+      650: {
         slidesPerView: 1,
 
       },
       768: {
-        slidesPerView: 1,
+        slidesPerView: 2,
       },
       992: {
         slidesPerView: 1,
@@ -267,14 +267,14 @@ if (document.querySelector('.documents__slider')) {
         slidesPerView: 1,
       },
       400: {
-        slidesPerView: 1,
+        slidesPerView: 2,
       },
-      600: {
+      650: {
         slidesPerView: 1,
 
       },
       768: {
-        slidesPerView: 1,
+        slidesPerView: 2,
       },
       992: {
         slidesPerView: 1,

@@ -6,20 +6,10 @@
 }
 
 .modal {
-  position: relative;
-
-  //&::before {
-  //  content: "";
-  //  position: absolute;
-  //  width: 30px;
-  //  height: 30px;
-  //  background: url(../images/icons/smartphone.svg) center no-repeat;
-  //  right: 63px;
-  //  bottom: 121px;
-  //  opacity: 0.1;
-  //  z-index: -10;
-  //  transform: scale(10);
-  //}
+  background-image: url('../images/icons/big-m-grey.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 500px 450px;
 
   &__logo {
     display: inline-block;
@@ -78,7 +68,7 @@
     margin: 0 0 30px;
     &__label {
       display: block;
-      margin: 0 auto 10px;
+      margin: 0 auto;
       max-width: 257px;
     }
 
@@ -89,7 +79,7 @@
     &__input {
       display: block;
       margin: 0 auto;
-      padding: 5px 12px;
+      padding: 12px 12px;
     }
 
     &__btn {
@@ -144,6 +134,7 @@
 
     &__options {
       display: flex;
+      margin: 10px 0 0;
       max-width: 100%;
       width: 100%;
     }
