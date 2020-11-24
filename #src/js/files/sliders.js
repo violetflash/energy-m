@@ -341,3 +341,43 @@ if (document.querySelector('.about__slider')) {
     }
   });
 }
+
+if (document.querySelector('.viewed__slider')) {
+  var viewedCards = new Swiper('.viewed__slider', {
+    slidesPerView: 6,
+    spaceBetween: 20,
+    observer: true,
+    observeParents: true,
+    speed: 800,
+    autoplay: true,
+    loop: true,
+    navigation: {
+      nextEl: '.similar .slider-nav__next',
+      prevEl: '.similar .slider-nav__prev',
+    },
+    breakpoints: {
+      280: {
+        slidesPerView: 1,
+      },
+      330: {
+        slidesPerView: 2,
+      },
+      400: {
+        slidesPerView: 2,
+      },
+      600: {
+        slidesPerView: 3,
+
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      992: {
+        slidesPerView: 5,
+      },
+      1200: {
+        slidesPerView: 6,
+      },
+    }
+  });
+}

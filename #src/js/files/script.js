@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
 @@include('../../components/selection/selection.js', {})
 @@include('../../components/articles/articles.js', {})
 @@include('../../components/instagram/instagram.js', {})
+@@include('../../components/map/map.js', {})
 
 
 //Range Slider (NOUISLIDER)
