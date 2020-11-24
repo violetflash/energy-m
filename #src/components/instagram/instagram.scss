@@ -19,6 +19,7 @@
 
   &__inner {
 
+
   }
 
   &__title {
@@ -42,16 +43,46 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
+    @media (max-width: $md3+px) {
+      flex-direction: column;
+    }
+  }
+  
+  &__socials {
+    @media (max-width: $md3+px) {
+      order: 1;
+      flex: 1;
+      margin:0 0 20px;
+      padding: 10px 15px;
+      width:  auto;
+      align-self: flex-end;
+    }
   }
 
   &__body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
+    @media (max-width: $md2+px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__header-text {
+    margin: 0 70px 0 0;
+    line-height: 1.7;
+
+    @media (max-width: $md3+px) {
+      margin: 0;
+      order: 2;
+    }
   }
 
   &__text {
-    margin: 0 70px 0 0;
+    margin: 0 20px 0 0;
     line-height: 1.7;
   }
 
@@ -63,6 +94,15 @@
     height: 388px;
     overflow-y: scroll;
 
+    @media (max-width: $md2+px) {
+      max-width: calc(100% - 60px);
+      margin: 0 0 20px;
+    }
+
+    @media (max-width: 420px) {
+      max-width: calc(100% - 30px);
+    }
+
     .os-scrollbar-track {
       background: rgba($mainColor, 0.1) !important;
     }
@@ -72,12 +112,25 @@
     display: flex;
     flex-wrap: wrap;
     max-width: calc(100% - 10px);
+    width: 100%;
 
     a {
       display: block;
       margin: 0 20px 20px 0;
       height: 184px;
-      max-width: 184px;
+      max-width: calc((100% - 60px) / 3);
+
+      @media (max-width: 1150px) {
+        height: 124px;
+      }
+      
+      @media (max-width: 600px) {
+        max-width: calc((100% - 40px) / 2);
+      }
+
+      @media (max-width: 420px) {
+        max-width: calc(100% - 20px);
+      }
 
       img {
         width: 100%;
@@ -86,14 +139,20 @@
         object-position: center;
       }
     }
-
-
   }
 
   &__info {
     //flex: 0 1 535px;
     max-width: 535px;
     width: 100%;
+
+    @media (max-width: $md2+px) {
+      max-width: calc(100% - 60px);
+    }
+
+    @media (max-width: 420px) {
+      max-width: calc(100% - 30px);
+    }
   }
   
   &__article {
@@ -110,11 +169,19 @@
 .insta-info {
   display: flex;
 
+  @media (max-width: 400px) {
+    display: block;
+  }
+
   &__image {
     margin: 0 18px 0 0;
     flex: 0 0 120px;
     height: 120px;
     overflow: hidden;
+    
+    @media (max-width: 400px) {
+      margin: 0 0 20px;
+    }
 
     img {
       width: 100%;
@@ -139,6 +206,10 @@
   &__actions {
     display: flex;
     align-items: center;
+
+    @media (max-width: 400px) {
+      //display: block;
+    }
   }
 
   &__btn {
@@ -148,10 +219,17 @@
     color: $white;
   }
 
+
+
   &__stats-text {
+    display: block;
     margin: 0 0 5px;
     font-weight: 600;
     font-size: 12px;
     color: $mainColor-light;
+
+    &:last-child {
+      margin: 0;
+    }
   }
 }

@@ -480,7 +480,7 @@
 }
 
 .socials {
-  display: flex;
+  display: inline-flex;
   flex: 0 0 288px;
   align-items: center;
   padding: 18px 22px;
@@ -500,6 +500,8 @@
   }
   
   &__icon {
+    width: 35px;
+    height: 35px;
     margin: 0 10px 0 0;
 
     svg {
