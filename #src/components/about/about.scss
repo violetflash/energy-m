@@ -2,22 +2,44 @@
   padding: 100px 0;
   
   @media (max-width: $md3+px) {
-    padding: 50px 0;
+    padding: 30px 0 50px;
+  }
+
+  &__inner {
+    @media (max-width: 650px) {
+      margin: 0 -15px;
+    }
   }
   
   &__header {
     display: flex;
     justify-content: space-between;
     margin: 0 0 40px;
+    
+    @media (max-width: $md3+px) {
+      margin: 0 0 20px;
+    }
+
+    @media (max-width: 650px) {
+      padding: 0 15px;
+    }
   }
   
   &__title {
     margin: 0 30px 0 0;
     text-transform: uppercase;
+
+    @media (max-width: $md3+px) {
+      margin: 0;
+    }
   }
 
   .slider-nav {
     flex-direction: row;
+
+    @media (max-width: $md3+px) {
+      display: none;
+    }
     
     &__prev {
       transform: rotate(0);
@@ -68,6 +90,10 @@
       backface-visibility: hidden;
       transform: translateX(0) translateZ(0);
       transition: all 3s ease-out;
+
+      @media (max-width: 1250px) {
+        width: 100%;
+      }
     }
 
     &__figcaption {
