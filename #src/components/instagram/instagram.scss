@@ -1,0 +1,157 @@
+.instagram {
+  position: relative;
+  padding: 0 0 100px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    height: 325px;
+    background-color: $grey;
+    z-index: -1;
+  }
+
+  @media (max-width: $md3+px) {
+    padding: 0 0 50px;
+  }
+
+  &__inner {
+
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    margin: 0 0 15px;
+  }
+
+  &__title-text {
+    margin: 0 5px 0 0;
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    width: 130px;
+    height: 37px;
+  }
+
+  &__header {
+    margin: 0 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__text {
+    margin: 0 70px 0 0;
+    line-height: 1.7;
+  }
+
+  &__photo {
+    margin: 0 20px 0 0;
+    //flex: 0 0 606px;
+    max-width: 622px;
+    width: 100%;
+    height: 388px;
+    overflow-y: scroll;
+
+    .os-scrollbar-track {
+      background: rgba($mainColor, 0.1) !important;
+    }
+  }
+
+  &__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: calc(100% - 10px);
+
+    a {
+      display: block;
+      margin: 0 20px 20px 0;
+      height: 184px;
+      max-width: 184px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+
+  }
+
+  &__info {
+    //flex: 0 1 535px;
+    max-width: 535px;
+    width: 100%;
+  }
+  
+  &__article {
+    margin: 0 0 50px;
+    height: 213px;
+    overflow-y: scroll;
+
+    .os-scrollbar-track {
+      background: rgba($mainColor, 0.1) !important;
+    }
+  }
+}
+
+.insta-info {
+  display: flex;
+
+  &__image {
+    margin: 0 18px 0 0;
+    flex: 0 0 120px;
+    height: 120px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__title {
+    margin: 0 0 5px;
+    font-weight: 800;
+  }
+
+  &__subtitle {
+    margin: 0 0 25px;
+    font-weight: 600;
+    color: $mainColor-light;
+    line-height: 1.4;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    margin: 0 18px 0 0;
+    padding: 8px 18px;
+    background: linear-gradient(135deg, #E62817 0%, #F26118 100%);
+    color: $white;
+  }
+
+  &__stats-text {
+    margin: 0 0 5px;
+    font-weight: 600;
+    font-size: 12px;
+    color: $mainColor-light;
+  }
+}
