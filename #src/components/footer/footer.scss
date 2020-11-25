@@ -1,0 +1,42 @@
+.footer {
+  background-color: $grey;
+
+  &__inner {
+    position: relative;
+    
+    @media (max-width: $md3+px) {
+      margin: 0 -15px;
+    }
+  }
+
+  &__to-top {
+    position: absolute;
+    left: 20px;
+    top: -20px;
+  }
+
+  //display: none;
+  padding: 0 0 300px;
+  .top-panel {
+    
+    @media (max-width: $md3+px) {
+      padding: 0 0 0 15px;
+    }
+    &__menu {
+      &::before {
+        display: none;
+      }
+    }
+
+    &__cart {
+      order: 5;
+      @media (max-width: $md3+px) {
+        margin: 0;
+      }
+
+      @media (max-width: 600px) {
+        display: flex;
+      }
+    }
+  }
+}
