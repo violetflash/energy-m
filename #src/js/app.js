@@ -5,5 +5,4 @@
 @@include('files/dynamic-adapt.js', {})
 @@include('files/forms.js', {})
 @@include('files/script.js', {})
-
-
+@@include('files/vendors/vendors-vip.js', {})

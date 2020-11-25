@@ -1,5 +1,5 @@
 .hystmodal__window {
-  padding: 30px 40px 40px;
+
   max-width: 450px;
   //height: 600px;
   width: 100%;
@@ -10,6 +10,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 500px 450px;
+  padding: 30px 40px 40px;
 
   &__logo {
     display: inline-block;

@@ -1,1 +1,1 @@
-@@include('list-js+nested.js', {})
+@@include('list-js.js', {})
