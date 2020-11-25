@@ -32,3 +32,12 @@ for (j = 0; j < map_acc.length; j++) {
         }
     });
 }
+
+//CITY FILTER by list.js plugin -- DOESNT WORKING WITH NESTED LISTS
+// var options = {
+//     valueNames: [ 'map__link' ],
+//     nestedSearch: true
+// };
+//
+// var userList = new List('city-search', options);
+
